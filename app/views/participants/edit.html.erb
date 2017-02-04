@@ -1,0 +1,6 @@
+<%= render 'header' %>
+<%= render 'list' %>
+<fieldset>
+  <legend>Participante <%= @selected_participants.size + 1 rescue 1 %></legend>
+  <%= render 'form' %>
+</fieldset>

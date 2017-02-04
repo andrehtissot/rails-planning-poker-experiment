@@ -1,0 +1,22 @@
+<%= render 'header' %>
+<%= render partial: 'list', locals: {hide_link_to_index: true} %>
+<fieldset>
+  <legend>Escolha um participante cadastrado ou realize um novo cadastro</legend>
+  <table>
+    <thead>
+      <tr>
+        <th>Participante cadastrado</th>
+        <th><%= link_to 'Novo Participante', new_participant_path %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @participants.each do |participant| %>
+      <tr>
+        <td><%= participant.name %></td>
+        <td><%= link_to 'Selecionar', add_to_list_participant_path(participant) %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br />
+</fieldset>

@@ -1,0 +1,18 @@
+<h1>Times</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th><%= link_to 'Novo time', new_team_path %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teams.each do |team| %>
+      <tr>
+        <td><%= team.name %></td>
+        <td><%= link_to 'Selecione', team %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

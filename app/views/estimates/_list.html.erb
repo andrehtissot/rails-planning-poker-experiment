@@ -1,0 +1,21 @@
+<div style="float:left;margin-right:20px">
+  <fieldset>
+    <legend>Requisitos a estimar</legend>
+    <table>
+      <tbody>
+        <% @requirements_to_estimate.each_with_index do |requirement, index| %>
+          <tr>
+            <td>Requisito <%= (index+1) %></td>
+            <td><%= link_to 'Abrir', estimates_path({requirement: requirement}) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </fieldset>
+  <% if !BLOCK_RESULTS_INDEX && @is_all_requirements_estimated %>
+    <fieldset>
+      <legend>Resultados</legend>
+      <%= link_to 'Tabela de Comparação', reports_comparation_table_path %>
+    </fieldset>
+  <% end %>
+</div>

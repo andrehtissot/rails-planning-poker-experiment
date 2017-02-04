@@ -1,0 +1,35 @@
+<%= render 'estimates/header' %>
+<%= render 'estimates/project' %>
+<%= render 'estimates/list' %>
+
+<div style="float:left;position:absolute;margin-left:180px">
+  <fieldset>
+    <legend>Resultados</legend>
+    <p>
+      <strong>Tabela de Comparação</strong>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Requisito</th>
+          <th>Estimativa final</th>
+          <th>Esforço real</th>
+          <th>Diferença relativa (%)</th>
+          <th>Diferença absoluta (AR)</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @estimates.each_with_index do |estimate, index| %>
+        <% requirement = estimate.requirement %>
+        <tr>
+          <td><%= (index+1) %></td>
+          <td><%= estimate.effort_estimate.round(2) rescue 'N/A' %></td>
+          <td><%= requirement.real_effort.round(2) %></td>
+          <td><%= ((estimate.effort_estimate / requirement.real_effort).abs  * 100).round(2) rescue 'N/A' %></td>
+          <td><%= requirement.ar(estimate.effort_estimate).round(2) rescue 'N/A' %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </fieldset>
+</div>

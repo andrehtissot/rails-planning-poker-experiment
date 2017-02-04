@@ -1,0 +1,78 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6:
+  title: Projeto 01
+  hashkey: bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  objective: Portal de transparência para gastos municipais
+  technologies: "PHP 5.4, MySQL 5.3, HTML 4, CSS 2, jQuery 1.8"
+  size: 1170
+
+project_7459a32db026f1945c0e899558512e9f93b24f83:
+  title: Projeto 02
+  hashkey: 7459a32db026f1945c0e899558512e9f93b24f83
+  objective: Sistema online de tarefas escolares e comunicação com professores
+  technologies: "Rails 3, MySQL 5.3, HTML 4, CSS 2, jQuery 1.8"
+  size: 748.5
+
+project_5915c237fbf4c9e56b918f783427de50b01f416d:
+  title: Projeto 03
+  hashkey: 5915c237fbf4c9e56b918f783427de50b01f416d
+  objective: Sistema de orientação ao consumidor
+  technologies: "PHP 5.4, MySQL 5.3, HTML 4, CSS 2, jQuery 1.8"
+  size: 411
+
+project_af7e1eb846a27844cc4300153c3f1a0ea1367e19:
+  title: Projeto 04
+  hashkey: af7e1eb846a27844cc4300153c3f1a0ea1367e19
+  objective: Aplicativo web de exibição de notícias
+  technologies: "Android 2.3, Rails 3, MySQL 5.3, HTML 4, CSS 2, jQuery 1.8"
+  size: 436
+
+project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee:
+  title: Projeto 05
+  hashkey: 3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  objective: Aplicativo web de pesquisa para medir o consumo de alimentos e atividades físicas em escolas públicas
+  technologies: "PHP 5.3, MySQL 5.3, HTML 5, CSS 3, jQuery 1.8"
+  size: 351.4
+
+project_2c46242d0357d5162e76171efbd083e2a8a92d68:
+  title: Projeto 06
+  hashkey: 2c46242d0357d5162e76171efbd083e2a8a92d68
+  objective: Sistema genéricode gerência de usuários e serviços
+  technologies: "PHP 5.3, MSSQL 2008 R2, HTML 4, CSS 2, jQuery 1.8"
+  size: 293
+
+project_b1fc32a17081c0257c34ae208d9dc756714b343a:
+  title: Projeto 07
+  hashkey: b1fc32a17081c0257c34ae208d9dc756714b343a
+  objective: Portal de currículos
+  technologies: "PHP 5.3, MSSQL 2008 R2, HTML 4, CSS 2, jQuery 1.8"
+  size: 178
+
+project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af:
+  title: Projeto 08
+  hashkey: b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  objective: Manutenção evolutiva de sistema de gerência de eleições
+  technologies: "PHP 5.3, MSSQL 2008 R2, HTML 4, CSS 2, jQuery 1.8"
+  size: 35
+
+project_2ac9ed078f15138a9f7567704fa01004a7a9d620:
+  title: Projeto 09
+  hashkey: 2ac9ed078f15138a9f7567704fa01004a7a9d620
+  objective: Portal/Blog institucional
+  technologies: "Rails 3, MySQL 5.3, HTML 4, CSS 2, jQuery 1.8"
+  size: 350
+
+project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d:
+  title: Projeto 10
+  hashkey: 0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  objective: Sistema de orientação ao consumidor
+  technologies: "PHP 5.3, MSSQL 2008 R2, HTML 4, CSS 2, jQuery 1.8"
+  size: 299
+
+project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4:
+  title: Projeto 11
+  hashkey: 670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  objective: Portal de transparência para gastos municipais
+  technologies: "PHP 5.3, MySQL 5.3, HTML 4, CSS 2, jQuery 1.8"
+  size: 235

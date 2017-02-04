@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @estimate.team %>
+</p>
+
+<p>
+  <strong>Requirement:</strong>
+  <%= @estimate.requirement %>
+</p>
+
+<p>
+  <strong>Estimate value:</strong>
+  <%= @estimate.estimate_value %>
+</p>
+
+<p>
+  <strong>Justification:</strong>
+  <%= @estimate.justification %>
+</p>
+
+<%= link_to 'Edit', edit_estimate_path(@estimate) %> |
+<%= link_to 'Back', estimates_path %>

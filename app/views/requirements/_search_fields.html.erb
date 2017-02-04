@@ -1,0 +1,25 @@
+<fieldset>
+  <legend>Filtros de Busca</legend>
+  <%= form_tag search_requirements_path, method: :post do %>
+    <div class="field">
+      <%= label_tag :description, 'Palavras-chave:' %>
+      <%= text_field_tag :description, @filters[:description] %>
+      *Para buscas com palavras compostas, utilize-as entre aspas duplas.
+    </div>
+    <div class="field">
+      <%= label_tag :project_id, 'Projeto:' %>
+      <%= select_tag :project_id, options_for_select(@project_ids, @filters[:project_id]), include_blank: true %>
+    </div>
+    <div class="field">
+      <%= label_tag :real_effort_min, 'Esforço realizado mínimo:' %>
+      <%= number_field_tag :real_effort_min, @filters[:real_effort_min], min: 0 %>
+    </div>
+    <div class="field">
+      <%= label_tag :real_effort_max, 'Esforço realizado máximo:' %>
+      <%= number_field_tag :real_effort_max, @filters[:real_effort_max], min: 0 %>
+    </div>
+    <div class="actions">
+      <%= submit_tag 'Buscar' %>
+    </div>
+  <% end %>
+</fieldset>

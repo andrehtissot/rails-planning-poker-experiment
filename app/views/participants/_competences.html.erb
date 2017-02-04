@@ -1,0 +1,45 @@
+<br />
+<table>
+  <thead>
+    <tr>
+      <th>Competência</th>
+      <th>Básico</th>
+      <th>Intermediário</th>
+      <th>Avançado</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody class="competence-fields">
+    <% @participant.competences.to_a.push(Competence.new(level:1)).each_with_index do |competence, index| %>
+      <%= fields_for :competence, competence do |c| %>
+        <tr>
+          <td><%= c.text_field :title, class: 'competence-title', name: "competence[title][#{index}]" %></td>
+          <td><%= c.radio_button :level, 1, name: "competence[level][#{index}]" %></td>
+          <td><%= c.radio_button :level, 2, name: "competence[level][#{index}]" %></td>
+          <td><%= c.radio_button :level, 3, name: "competence[level][#{index}]" %></td>
+          <td><%= link_to 'Remover', '#', class: 'remove-competence-row' %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<br />
+<script>
+$('input.competence-title:last').val('').closest('tr');
+$('a.remove-competence-row:last').css('visibility', 'hidden');
+var next_row_index = $('tbody.competence-fields tr').size();
+var $tbody = $('tbody.competence-fields');
+$tbody.on('keydown keypress keyup', 'input.competence-title:last', function(){
+  var $this = $(this);
+  if($this.val() == '') {
+    var $virtual_tr = $this.closest('tr').clone();
+    $virtual_tr.html($virtual_tr.html().replace(/\[\d+\]/g,'['+next_row_index+']'));
+    next_row_index++;
+    $virtual_tr.appendTo($this.closest('tbody'));
+    $this.closest('tr').find('a.remove-competence-row').css('visibility', 'visible');
+  }
+}).on('click', 'a.remove-competence-row', function(e){
+  e.preventDefault();
+  $(this).closest('tr').remove();
+});
+</script>

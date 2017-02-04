@@ -1,0 +1,39 @@
+<%= form_for(@participant) do |f| %>
+  <% if @participant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team.errors.count, "erro") %> impede este time de ser gravado:</h2>
+      <ul>
+      <% @participant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name, 'Nome Completo:' %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :birthday, 'Data de Nascimento:' %>
+    <%= f.text_field :birthday, value: @participant.birthday_verbose %>
+  </div>
+  <%= render 'competences' %>
+  <div class="field">
+    <%= f.label :function, 'Caso trabalhe, função que desempenha:' %>
+    <%= f.text_field :function %>
+  </div>
+  <div class="field">
+    <%= f.label :sex, 'Sexo:' %>
+    <%= f.radio_button(:sex, "1") %>
+    <%= f.label(:sex_1, "Masculino") %>
+    <%= f.radio_button(:sex, "2") %>
+    <%= f.label(:sex_2, "Feminino") %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Salvar' %> |
+    <%= link_to 'Voltar', participants_path %>
+  </div>
+<% end %>
+<script type="text/javascript">
+$("#participant_birthday").mask("?99/99/9999");
+</script>

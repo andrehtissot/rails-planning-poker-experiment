@@ -1,0 +1,59 @@
+<p>
+  <strong>
+    Quanto tempo do cronograma total do projeto foi gasto antes do início da execução desta atividade:
+  </strong>
+  <%= (@requirement.relative_starting_point * 100).round(2) %>%.
+</p>
+<p>
+  <strong>
+    Quanto do projeto já foi entregue antes do início da execução desta atividade:
+  </strong>
+  <%= (@requirement.relative_completeness * 100).round(2) %>%.
+</p>
+<p>
+  <strong>Descrição:</strong><br />
+  <%= @requirement.description.strip.gsub("\n",'<br />').html_safe %>
+</p>
+<br />
+<% if(@estimate.new_record? || @estimate.effort_estimate.nil? || @estimate.justification.empty?) %>
+  <%= render 'new_round' %>
+  <div class="final-estimate" <%= @estimate_errors ? '' : 'style="display:none"'.html_safe %>>
+    <% if @estimate_errors.present? %>
+      <div id="error_explanation">
+        <h2>Os erros abaixo impedem esta estimativa de ser gravada:</h2>
+        <ul>
+          <% if @estimate_errors.any? %>
+            <% @estimate_errors.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%=  %>
+    <%= form_for(@estimate) do |e| %>
+      <%= e.hidden_field :requirement_id %>
+      <p>
+        <strong>Estimativa final:</strong>
+        <% if @estimate_effort_estimate.nil? %>
+          <%= e.text_field :effort_estimate %>
+        <% else %>
+          <%= e.text_field :effort_estimate, {value: @estimate_effort_estimate} %>
+        <% end %>
+      </p>
+      <p>
+        <strong>Descreva livremente, e com o máximo de detalhes as razões e incertezas que o(s) levou(aram) a esta estimativa:</strong><br />
+        <div class="allwidth">
+          <% if @estimate_justification.nil? %>
+            <%= e.text_area :justification %>
+          <% else %>
+            <%= e.text_area :justification, {value: @estimate_justification} %>
+          <% end %>
+        </div>
+      </p>
+      <p class="actions">
+        <%= e.submit 'Salvar' %>
+      </p>
+    <% end %>
+  </div>
+<% end %>

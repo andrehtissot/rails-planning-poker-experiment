@@ -1,0 +1,46 @@
+pt:
+  activerecord:
+    attributes:
+      team:
+        name: Nome
+      participant:
+        name: Nome Completo
+        birthday: Data de Nascimento
+        sex: Sexo
+        competences: Comepetências
+      round:
+        round_participants: ""
+      estimate:
+        effort_estimate: Estimativa final
+        justification: Justificativa final
+    errors:
+      models:
+        team:
+          attributes:
+            name:
+              blank: "não pode estar vazio"
+              taken: "já utilizado"
+        participant:
+          attributes:
+            name:
+              blank: "não pode estar vazio"
+              taken: "já utilizado"
+            birthday:
+              blank: "não pode estar vazio"
+              invalid_date: "não contém uma data válida"
+              before: "tem de ser uma data anterior a hoje"
+            sex:
+              blank: "não pode estar vazio"
+            competences:
+              blank: "não pode estar vazio"
+        round:
+          attributes:
+            round_participants:
+              invalid: "Os dados da tabela não estão completos ou válidos"
+        estimate:
+          attributes:
+            effort_estimate:
+              blank: "não pode estar vazia"
+              not_a_number: "não contém um valor numérico"
+            justification:
+              blank: "não pode estar vazia"

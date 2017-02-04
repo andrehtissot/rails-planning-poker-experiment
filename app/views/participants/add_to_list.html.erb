@@ -1,0 +1,47 @@
+<%= render 'header' %>
+<%= render 'list' %>
+<fieldset>
+  <legend>Tem certeza que deseja selecionar este participante?</legend>
+  <p>
+    <strong>Nome:</strong>
+    <%= @participant.name %>
+  </p>
+
+  <p>
+    <strong>Data de Nascimento:</strong>
+    <%= @participant.birthday_verbose %>
+  </p>
+
+  <p>
+    <table>
+      <thead>
+        <tr>
+          <th>Competência</th>
+          <th>Nível</th>
+        </tr>
+      </thead>
+      <tbody class="competence-fields">
+        <% @participant.competences.each do |competence| %>
+          <tr>
+            <td><%= competence.title %></td>
+            <td><%= competence.level_verbose %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </p>
+
+  <p>
+    <strong>Caso trabalhe, função que desempenha:</strong>
+    <%= @participant.function %>
+  </p>
+
+  <p>
+    <strong>Sexo:</strong>
+    <%= @participant.sex_verbose %>
+  </p>
+
+  <%= link_to 'Selecionar', confirm_add_to_list_participant_path(@participant) %> |
+  <%= link_to 'Editar', edit_participant_path(@participant) %> |
+  <%= link_to 'Voltar', participants_path %>
+</fieldset>

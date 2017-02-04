@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  # password:
+  # socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: ppexperiment_dev
+
+test:
+  <<: *default
+  database: ppexperiment_test
+
+production:
+  <<: *default
+  database: ppexperiment_prod

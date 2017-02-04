@@ -1,0 +1,25 @@
+<div style="float:left;margin-right:20px">
+  <fieldset>
+  <legend>Participantes do time "<%= @team.name %>"</legend>
+    <table>
+      <thead>
+        <tr>
+          <th>Integrante</th>
+          <th>
+            <% unless(hide_link_to_index rescue false) %>
+              <%= link_to 'Mostrar lista de cadastrados', participants_path %>
+            <% end %>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @selected_participants.each do |participant| %>
+          <tr>
+            <td><%= participant.name %></td>
+            <td><%= link_to 'Remover da lista', remove_from_list_participant_path(participant), data: { confirm: 'Tem certeza?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </fieldset>
+</div>

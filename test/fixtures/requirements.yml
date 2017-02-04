@@ -1,0 +1,2254 @@
+---
+requirement_50d6f30660da85eea81a9d093c0404f479cf4b57:
+  project: project_af7e1eb846a27844cc4300153c3f1a0ea1367e19
+  hashkey: 50d6f30660da85eea81a9d093c0404f479cf4b57
+  relative_starting_point: 0.0005
+  relative_completeness: 0.0
+  real_estimate: 2.0
+  real_effort: 1.34
+  for_experiment: false
+  description: |-
+    Android - Loading
+    ------------------------
+    A primeira interface a ser apresentada no aplicativo é uma interface de Loading.
+
+    O funcionamento dessa interface será da seguinte forma:
+    # O sistema apresenta a interface de Loading;
+    # O sistema inicia uma thread que chamará uma função a ser implementada posteriormente. Neste primeiro momento, apenas criar uma função em branco;
+    # Ao término da thread, o sistema iniciará a tela inicial.
+
+
+    Atenção: esta carta não inclui o desenvolvimento da tela inicial, e sim somente a chamada da mesma.
+requirement_93d0e005b5849958fbf47435cea9ed68e78d00cc:
+  project: project_af7e1eb846a27844cc4300153c3f1a0ea1367e19
+  hashkey: 93d0e005b5849958fbf47435cea9ed68e78d00cc
+  relative_starting_point: 0.0003
+  relative_completeness: 0.0
+  real_estimate: 12.0
+  real_effort: 4.7
+  for_experiment: false
+  description: |-
+    Web - Integração com Redes Sociais
+    ------------------------
+    Deverá ser criada uma integração do sistema web com as seguintes redes sociais:
+    * Facebook;
+    * Twitter.
+
+
+    A integração funcionará de forma que, se configurado no aplicativo os dados de acesso da(s) rede(s) selecionada(s), o sistema web fará a publicação automática da notícia nas mesmas.
+
+    Atenção: esta carta se refere apenas ao sistema web e não inclui de forma alguma a funcionalidade no aplicativo mobile.
+requirement_eecf28df008dbfe637c27d1afd72790bbde0498d:
+  project: project_af7e1eb846a27844cc4300153c3f1a0ea1367e19
+  hashkey: eecf28df008dbfe637c27d1afd72790bbde0498d
+  relative_starting_point: 0.0003
+  relative_completeness: 0.0
+  real_estimate: 1.0
+  real_effort: 0.84
+  for_experiment: false
+  description: |-
+    Web - Manter Comentário
+    ------------------------
+    O sistema web irá armazenar todos os comentários realizados no aplicativo
+    mobile, ou seja, qualquer informação publicada sobre as notícias em um
+    determinado dispositivo móvel será armazenada no sistema web. As
+    seguintes informações serão armazenadas:
+    * Identificador: Esta informação permitirá que o usuário saiba a qual
+    notícia o comentário pertence;
+    * Comentário;
+    * Nome: Nome do usuário que postou a notícia;
+    * E-mail: E-mail do Usuário que postou a Notícia.
+
+
+    Os comentários não precisarão de um webservice desenvolvido pela
+    contratante.
+requirement_715889aeaa9f8f0d8a9e351f92edc67540595862:
+  project: project_af7e1eb846a27844cc4300153c3f1a0ea1367e19
+  hashkey: 715889aeaa9f8f0d8a9e351f92edc67540595862
+  relative_starting_point: 0.0003
+  relative_completeness: 0.0
+  real_estimate: 1.0
+  real_effort: 0.82
+  for_experiment: false
+  description: |-
+    Web - Manter Configurações
+    ------------------------
+    O sistema web fará em determinados módulos envio de e-mails com
+    informações para os usuários cadastros no sistema. No módulo de
+    configurações, o usuário poderá configurar as informações referentes ao
+    servidor SMTP que fará o envio destes e-mails.
+
+    Para cadastrar uma
+    configuração, as seguintes informações deverão ser preenchidas:
+    * Endereço do Host;
+    * Usuário;
+    * Senha;
+    * Porta;
+    * Autenticação;
+    * E-mail.
+
+
+    Todas as informações são de preenchimento obrigatório. O sistema não
+    permitirá que seja cadastrada mais de uma configuração.
+
+    Este módulo possuirá as seguintes funcionalidades:
+    * Criação de Configuração;
+    * Edição de Configuração;
+    * Exclusão de Configuração: a exclusão de um registro deste módulo será física.
+
+
+    O sistema não permitirá que o usuário acesse nenhuma funcionalidade
+    enquanto uma configuração não seja cadastrada.
+requirement_dac6caf775bbb054145268418f3ecd566543670b:
+  project: project_af7e1eb846a27844cc4300153c3f1a0ea1367e19
+  hashkey: dac6caf775bbb054145268418f3ecd566543670b
+  relative_starting_point: 0.0003
+  relative_completeness: 0.0
+  real_estimate: 2.0
+  real_effort: 1.7
+  for_experiment: false
+  description: |-
+    Web - Manter Pessoas
+    ------------------------
+    Para acessar algumas informações do aplicativo mobile será necessário que
+    o usuário faça um cadastro através de seu smartphone. As informações
+    preenchidas neste cadastro serão enviadas para este módulo do sistema
+    web. Este módulo receberá as seguintes informações:
+    * Nome;
+    * E-mail.
+
+
+    O módulo de pessoas possuirá as seguintes funcionalidades:
+    * Pesquisa de Pessoas: A pesquisa poderá ser feita por nome e e-mail;
+    * Exportação de Pessoas: O sistema permitirá que sejam exportadas as
+    pessoas armazenadas para um arquivo. O formato do arquivo será
+    XLS. A funcionalidade permitirá que o usuário escolha as pessoas que
+    deseja exportar para o arquivo.
+    * Exclusão de Pessoas: O sistema permitirá que as pessoas
+    armazenadas sejam excluídas da base de dados. A exclusão destes
+    registros será feita fisicamente do banco de dados.
+requirement_fd548fdf0c1c75ff01f5390a941ad3560c8d719b:
+  project: project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  hashkey: fd548fdf0c1c75ff01f5390a941ad3560c8d719b
+  relative_starting_point: 0.7141
+  relative_completeness: 0.5709
+  real_estimate: 1.0
+  real_effort: 1.41
+  for_experiment: false
+  description: |-
+    Adicionar uma coluna no banco de dados para consumo ou não da merenda
+    ------------------------
+    0 = não;
+    1 = sim;
+requirement_d28de5e27506ae61f75062c85c163844d1bdeb53:
+  project: project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  hashkey: d28de5e27506ae61f75062c85c163844d1bdeb53
+  relative_starting_point: 0.6964
+  relative_completeness: 0.4199
+  real_estimate: 1.0
+  real_effort: 2.1
+  for_experiment: false
+  description: |-
+    Alterar exibição de respostas de FAQs
+    ------------------------
+    Nas telas da área do portal, há exibição de FAQ's, onde cada registro é exibido por uma pergunta, uma resposta e um tópico.
+
+
+    Como as respostas sempre vêm dentro da tag <p></p> (padrão CKEditor).
+
+    Altere o estilo desta tag p para ser exibida como span.
+
+
+    Obs.: É uma alteração baseada em CSS.
+requirement_6d0e0c5bb430c9ea7fd4d6015a7e0200943f7d12:
+  project: project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  hashkey: 6d0e0c5bb430c9ea7fd4d6015a7e0200943f7d12
+  relative_starting_point: 0.6922
+  relative_completeness: 0.4059
+  real_estimate: 1.0
+  real_effort: 1.01
+  for_experiment: false
+  description: |-
+    Alterar título FAQ's
+    ------------------------
+    Na área do Portal (área de acesso livre a pessoas não logadas) há a seção do portal chamada \"FAQ's\".
+
+    Dentro dessa seção devem ser alterados os títulos \"FAQ's\" para \"Perguntas frequentes\". Assim como na barra de menu.
+
+
+    Obs.: Essa alteração deve apenas ser realizada no texto estático das páginas.
+requirement_3b9b16aa220147faf11a446e7f2797cf1cfc170c:
+  project: project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  hashkey: 3b9b16aa220147faf11a446e7f2797cf1cfc170c
+  relative_starting_point: 0.6922
+  relative_completeness: 0.4059
+  real_estimate: 1.0
+  real_effort: 0.53
+  for_experiment: false
+  description: |-
+    Alterar títulos de Atifividades Físicas e Grupo de Atividades
+    ------------------------
+    Na área de cadastros (área de acesso para usuários administradores) há as seções chamadas “Grupos Atividades” e “Atividades Físicas”.
+
+    1.Dentro da sessão “Grupos Atividades”, os títulos “Grupos Atividades” devem ser alterados para “Grupos de atividades”. Assim como na barra de menu.
+
+    2.Dentro da sessão “Atividades Físicas”, os títulos “Atividades Físicas” devem ser alterados para “Atividades físicas e sedentárias”. Assim como na barra de menu.
+
+
+
+    Obs.: Essa alteração deve apenas ser realizada no texto estático das páginas.
+requirement_a92f89bed556bf41471be3005dfc7e42ff8db184:
+  project: project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  hashkey: a92f89bed556bf41471be3005dfc7e42ff8db184
+  relative_starting_point: 0.6921
+  relative_completeness: 0.4059
+  real_estimate: 1.0
+  real_effort: 0.38
+  for_experiment: false
+  description: |-
+    Corrigir label Descrição
+    ------------------------
+    Na área do Portal (área de acesso livre a pessoas não logadas) há a seção de \"Vídeos Explicativos\".
+
+    Nesta seção, os vídeos são exibidos por \"Título\" e \"Descrição\".
+
+    O erro está na exibição da label \"Descrição\", que está sendo exibida como \"Descricao\"
+
+    Obs.: Essa alteração deve apenas ser realizada no texto estático das páginas.
+requirement_215d0bce51c8c99b4023db4f21d8cfa566e6629a:
+  project: project_3ee44ab13a213d7ec000b793c32ac77df8fb6eee
+  hashkey: 215d0bce51c8c99b4023db4f21d8cfa566e6629a
+  relative_starting_point: 0.6957
+  relative_completeness: 0.4136
+  real_estimate: 1.0
+  real_effort: 1.33
+  for_experiment: false
+  description: |
+    Verificar Exibição incorreta de status ao \"visualizar atividades\"
+    ------------------------
+    Na área de cadastros (área de acesso para usuários administradores) há a seção chamada “Pesquisa”.
+
+    Dentro da sessão “Pesquisas”, é possível se acessar a tela de nova pesquisa.
+
+    Dentro da página de criação de pesquisa, no menu lateral direito é possível acessar a lista de opções para \"Grupos de atividades\".
+
+    Ao visualizar a lista de itens de \"Grupos de atividades\", é possível se clicar em um dos grupos para ver as atividades associadas ao grupo. E ao clicar, as atividades estão sendo exibidas com status \"inativo\".
+
+    A coluna de status da tabela de atividades físicas deve ser removida.
+    Assim como na tabela similar de alimentos.
+requirement_2c39daa0216573db59a3534d7cb7118f792fcff4:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: 2c39daa0216573db59a3534d7cb7118f792fcff4
+  relative_starting_point: 0.5214
+  relative_completeness: 0.6722
+  real_estimate: 1.0
+  real_effort: 1.0
+  for_experiment: false
+  description: "Criação de usuário.\n------------------------\nAo criar um usuario
+    o sistema deve enviar um email para o usuario informando os seguintes dados:\n\n-
+    login;\n- senha;\n\nO usuário deve sempre ser criado com a flag senha_padrao marcada.
+    \n"
+requirement_071b950c4a9bb7fe3f52af3ddc9bef9ade49cdca:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: 071b950c4a9bb7fe3f52af3ddc9bef9ade49cdca
+  relative_starting_point: 0.2781
+  relative_completeness: 0.1006
+  real_estimate: 3.0
+  real_effort: 4.88
+  for_experiment: false
+  description: |+
+    Manter Indicadores
+    ------------------------
+    Montar a arvore de Produtos/serviços(Ativos) na lateral esquerda.
+
+    Ao clicar em um produto/serviço, deve ser carregado uma tabela do lado direito com tds os Indicadores desse produto. Alem disso deve ser possivel criar novos indices e editar os existentes
+
+    A tabela de indicadores terá os seguintes campos:
+
+    Nome: string (Obrigatório)
+    Indicador Especial: integer (usar checkbox na view)
+
+
+requirement_461faaaabf6d46e8c172b5d5964f070e1a76b57b:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: 461faaaabf6d46e8c172b5d5964f070e1a76b57b
+  relative_starting_point: 0.1083
+  relative_completeness: 0.0012
+  real_estimate: 2.0
+  real_effort: 2.12
+  for_experiment: false
+  description: "Manter Unidade\n------------------------\nFazer Crud Para unidades
+    com os seguintes campos:\n- CNPJ\n- Razão Social\n- Nome Fantasia\n- CEP \n- Cidade\n-
+    Bairro\n- Logradouro/N.º/Complemento\n- status\n\nCriar funcionalidade para ativar/inativar
+    unidade.\n"
+requirement_4d76a593a23e7579d5e539d6debbc0aed99e2851:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: 4d76a593a23e7579d5e539d6debbc0aed99e2851
+  relative_starting_point: 0.1082
+  relative_completeness: 0.0012
+  real_estimate: 2.0
+  real_effort: 1.39
+  for_experiment: false
+  description: |+
+    Manter Usuários - Parte 001
+    ------------------------
+    Campos:
+    - nome;
+    - login;
+    - senha;
+    - status;
+
+    - Incluir opção ativar/desativar usuários;
+
+
+
+requirement_c7b6d2cd883dbf7d998e7c78d31640f142f0ef5f:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: c7b6d2cd883dbf7d998e7c78d31640f142f0ef5f
+  relative_starting_point: 0.1082
+  relative_completeness: 0.0012
+  real_estimate: 2.0
+  real_effort: 0.82
+  for_experiment: false
+  description: |-
+    Manter Usuários - Parte 002
+    ------------------------
+    Sessão.
+    Criar controller de Login/Logout no sistema.
+    Não permitir acessar nenhuma tela do sistema sem estar logado.
+requirement_eba4e30cffe9806ad6bd282c4a4717a593b6f0d2:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: eba4e30cffe9806ad6bd282c4a4717a593b6f0d2
+  relative_starting_point: 0.1082
+  relative_completeness: 0.0012
+  real_estimate: 1.0
+  real_effort: 0.63
+  for_experiment: false
+  description: |-
+    Manter Usuários - Parte 003
+    ------------------------
+    Permitir ao usuário a possibilidade de alterar a senha.
+requirement_320a988089cbf4d2993141814d3fc570ca35b29a:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: 320a988089cbf4d2993141814d3fc570ca35b29a
+  relative_starting_point: 0.1083
+  relative_completeness: 0.0012
+  real_estimate: 2.0
+  real_effort: 2.06
+  for_experiment: false
+  description: |-
+    Manter Usuários - Parte 004
+    ------------------------
+    Um usuário poderá ser vinculado a varias unidades.
+    No Formulário de criação/edição deverá ser possível  criar o vinculo entre usuario/unidade.
+requirement_74b8cd8b0dbae3468cdc0be7c44e37d286c9f4e2:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: 74b8cd8b0dbae3468cdc0be7c44e37d286c9f4e2
+  relative_starting_point: 0.539
+  relative_completeness: 0.7591
+  real_estimate: 1.0
+  real_effort: 0.17
+  for_experiment: false
+  description: |+
+    Mascara CR
+    ------------------------
+    o Campo CR nos serviços deve seguir a seguinte estrutura:
+
+    0.00.00.00.00
+
+requirement_d671e5c74c34ba8b6e1a993d3134d77558cc245d:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: d671e5c74c34ba8b6e1a993d3134d77558cc245d
+  relative_starting_point: 0.5407
+  relative_completeness: 0.7653
+  real_estimate: 1.0
+  real_effort: 0.17
+  for_experiment: false
+  description: |-
+    Tabela de Lançamentos
+    ------------------------
+    Exibir nome do usuario criador, e nome do usuario da ultima Edição;
+requirement_ae025b3c826bd0f4c6618c6b4b9dddf3b5cda28e:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: ae025b3c826bd0f4c6618c6b4b9dddf3b5cda28e
+  relative_starting_point: 0.6241
+  relative_completeness: 0.8266
+  real_estimate: 1.0
+  real_effort: 0.9
+  for_experiment: false
+  description: |
+    Tipo Produto/Serviço - Não permitir cadastrar novos produtos e indicadores em itens inativos
+    ------------------------
+    Quando um produto estiver inativo, não pode permitir que o usuário cadastre produtos e/ou indicadores novos.
+requirement_bed3dd8eaa5fb334051cbb985119a92245ef13a3:
+  project: project_2c46242d0357d5162e76171efbd083e2a8a92d68
+  hashkey: bed3dd8eaa5fb334051cbb985119a92245ef13a3
+  relative_starting_point: 0.5214
+  relative_completeness: 0.6722
+  real_estimate: 2.0
+  real_effort: 3.03
+  for_experiment: false
+  description: |-
+    Usuarios
+    ------------------------
+    Adicionar os seguintes campos em usuarios:
+     - email: string;
+     - senha_padrão: boolean;
+
+    Se um usuario logar no sistema e o campo senha_padrão estiver como true. O sistema deve redirecionar para a tela de trocar senha. Ao trocar a senha essa flag deve ser marcada como false;
+
+    Deve aver um before_filter que verifique se a o campos senha_padrao está marcado.
+
+    (Lembrando que já existe um metodo de trocar a senha hj)
+requirement_1034590eb5d45997a46466b7e4b95e9125a2db73:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 1034590eb5d45997a46466b7e4b95e9125a2db73
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 4.0
+  real_effort: 3.0
+  for_experiment: false
+  description: |2
+     Cursos complementares
+    ------------------------
+    No cadastro do candidato, haverá uma nova seção chamada “Cursos complementares”, como cursos de informática ou departamento pessoal.
+
+    Nesta seção, o candidato poderá adicionar cursos, e cada registro de novo cursos complementar vai ter como campos:
+    * Instituição de ensino (campo de texto)
+    * Nome do Curso (campo de texto, obrigatório)
+    * Cidade (campo de texto)
+    * Ano de Conclusão (campo de texto com máscara no formato AAAA)
+
+    Carga horária (campo de texto com máscara para aceitar somente números inteiros maiores que zero)
+requirement_d6180b995967867e8502da7ba92d20f4e47ca75a:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: d6180b995967867e8502da7ba92d20f4e47ca75a
+  relative_starting_point: 0.018
+  relative_completeness: 0.0299
+  real_estimate: 2.0
+  real_effort: 1.3
+  for_experiment: false
+  description: |-
+    Adicionar um campo na busca de candidatos
+    ------------------------
+    Na interface de pesquisa de candidatos, deverá ser inserido um campo de busca por palavra-chave no curriculum do candidato.
+requirement_4edcbc664ac869d3a497f7dddc5abef926164a6a:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 4edcbc664ac869d3a497f7dddc5abef926164a6a
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 12.0
+  real_effort: 27.82
+  for_experiment: false
+  description: |
+    Busca avançada de candidatos
+    ------------------------
+    Haverá um tela de busca avançada de candidatos onde os seguintes filtros poderão ser selecionados:
+    * Estado (combobox)
+    * Cidade (combobox)
+    * Setor de Atuação (combobox)
+    * Área de Atuação (combobox)
+    * Nível Hierárquico (combobox)
+    * Idioma (combobox)
+    ** Nível de fluência (marcar apenas uma opção)
+    * Curso de formação acadêmica (campo de texto)
+    * Curso complementar (campo de texto)
+    * Estado civil
+    ** Oções de estado civil (checboxes)
+    ** Tem filhos? (sim ou não)
+    * Portador de deficiência (sim ou não)
+    ** Marcar opção de tipo de deficiência (checkboxes)
+    * Grau ou nível de formação mínimo (combobox)
+    * Palavra-chave
+
+    O nível hierárquico será utilizado para buscar candidatos que tenham colocado o nível em alguma combinação dentro da classificação de objetivo profissional. Não buscará nas experiências profissionais.
+
+    O grau ou nível de formação será utilizado para buscar candidatos que tenham formação acadêmica igual ou superior.
+
+    A palavara-chave será utilizada na busca nos seguintes campos de texto em:
+    Experiência profissional:
+    Último cargo
+    Atividades realizadas
+    Objetivo profissional
+requirement_b9d71c7ed718eede17eda3825834ed4d1045fa4f:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: b9d71c7ed718eede17eda3825834ed4d1045fa4f
+  relative_starting_point: 0.126
+  relative_completeness: 0.1654
+  real_estimate: 4.0
+  real_effort: 4.15
+  for_experiment: false
+  description: |-
+    Candidato portador de deficiência
+    ------------------------
+    No cadastro de candidato, haverá uma nova seção para candidato portador de deficiência.
+
+
+    Nesta seção terá a seguinte pergunta em que a resposta poderá ser SIM ou NÃO:
+    * Portador de deficiência?
+
+
+
+    Por padrão, o sistema vai trazer a opção NÃO marcada.
+
+
+    Caso o candidato selecione a opção SIM, aparecerá 5 (cinco) opções de deficiência para ele marcar, podendo marcar mais de uma ao mesmo tempo:
+    # Auditiva
+    # Fala
+    # Física
+    # Mental
+    # Visual
+
+
+    Além disso, haverá um campo de texto para observações sobre a deficiência.
+
+
+    Caso o candidato marque a opção SIM, ele será obrigado a marcar pelo menos uma deficiência.
+requirement_e25737be9755e8105d1d00ac752d6846c348e6be:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: e25737be9755e8105d1d00ac752d6846c348e6be
+  relative_starting_point: 0.0415
+  relative_completeness: 0.0422
+  real_estimate: 8.0
+  real_effort: 8.91
+  for_experiment: false
+  description: |-
+    Controle de vagas
+    ------------------------
+    Deverá ser possível realizar a aprovação/rejeição de um candidato para uma determinada vaga.
+
+    Em ambos os casos (aprovação ou rejeição), o usuário preencherá uma mensagem que será enviada por e-mail para o candidato.
+
+    Para o caso de rejeição de um candidato, o e-mail será enviado e o candidato
+    excluído da lista.
+requirement_2604de2f6042a9ae700b3ed6ff82629c20803013:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 2604de2f6042a9ae700b3ed6ff82629c20803013
+  relative_starting_point: 0.372
+  relative_completeness: 0.653
+  real_estimate: 4.0
+  real_effort: 2.01
+  for_experiment: false
+  description: |
+    Empresa - Buscar Vagas
+    ------------------------
+    Criar um filtro de busca, por NOME, no Painel de Vagas, para que a empresa possa buscar as vagas cadastradas por ela.
+requirement_02374de8386406cf19b28f1bf2df25edc7a70204:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 02374de8386406cf19b28f1bf2df25edc7a70204
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 3.0
+  real_effort: 2.85
+  for_experiment: false
+  description: |-
+    Estado civil do candidato e filhos
+    ------------------------
+    No cadastro de candidato, haverá uma nova seção para que ele informe seu *estado civil e se tem filhos*.
+
+    A informação de estado civil será obrigatória e apresentará as seguintes opções:
+    * Solteiro(a)
+    * Casado(a)
+    * Separado(a)
+    * Divorciado(a)
+    * Viúvo(a)
+    * Outro
+
+    Em relação aos filhos haverá apenas a pergunta “Possuir filhos?”, podendo o candidato marcar SIM ou NÃO.
+    Por padrão o sistema virá marcado como NÃO.
+requirement_340aafc21ae991fce2d8c3062b9ce8fc10bd0aba:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 340aafc21ae991fce2d8c3062b9ce8fc10bd0aba
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 5.0
+  real_effort: 7.5
+  for_experiment: false
+  description: |-
+    Formação acadêmica do candidato
+    ------------------------
+    No cadastro do candidato, haverá uma seção para informar a formação acadêmica do candidato.
+    O candidato poderá informar múltiplos cursos de formação acadêmica, contendo os seguintes campos:
+    * Grau ou nível de formação (lista de opções detalhadas abaixo)
+    * Instituição (campo de texo)
+    * Curso (campo de texto)
+    * Data inicial (mês/ano)
+    * Data conclusão (mês/ano)
+
+    O candidato poderá deixar em branco o campo data de conclusão ou colocar uma previsão.
+
+    As opções para o grau ou nível de formação será previamente cadastrado na área administrativa.
+
+    Na área administrativa, para fins de apresentação no currículo, deverá ser informado a prioridade de exibição para cada nível, partindo do número 1, sendo o número 1 o nível com maior prioridade e não podendo existir mais de um nível com a mesma prioridade de apresentação.
+
+    A ordenação da lista de grau ou nível de formação será ordenada a partir do nível com menor prioridade até o nível com maior prioridade.
+requirement_5b210245b78b7007949e1a32a3d67318cb6bcf2c:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 5b210245b78b7007949e1a32a3d67318cb6bcf2c
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 3.0
+  real_effort: 2.25
+  for_experiment: false
+  description: |
+    Idiomas do candidato
+    ------------------------
+    O candidato poderá cadastrar idiomas.
+    Ao adicionar um novo idioma, o candidato deverá informar:
+    * O idioma (lista com idiomas cadastrados na área administrativa)
+    * O nível
+    ** Básico
+    ** Intermediário
+    ** Avançado
+    ** Fluente
+requirement_017b5997a052255ee43d586bced5705745b644cc:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 017b5997a052255ee43d586bced5705745b644cc
+  relative_starting_point: 0.1111
+  relative_completeness: 0.1146
+  real_estimate: 1.0
+  real_effort: 0.56
+  for_experiment: false
+  description: |-
+    Manter Idiomas
+    ------------------------
+    Na área administrativa, deverá incluir mais uma opção de menu para cadastrar idiomas.
+    Os campos para cadastro são:
+    - nome
+    - ativo
+
+    Por padrão todo novo registro será ativo.
+
+    Na lista de idiomas haverá um campo de busca igual ao de nível hierárquico.
+requirement_25cb8c6e1ac51e94b8c5c0add12d7091d392fc54:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 25cb8c6e1ac51e94b8c5c0add12d7091d392fc54
+  relative_starting_point: 0.018
+  relative_completeness: 0.0299
+  real_estimate: 2.0
+  real_effort: 1.87
+  for_experiment: false
+  description: |-
+    Manter pesquisa realizada
+    ------------------------
+    Na interface de pesquisa de candidatos, ao abrir um dos resultados e então clicar no botão de voltar, o sistema deverá trazer a mesma busca que havia sido feita.
+requirement_755e999a3e5aa2fd2528a2ddc6981f8a47a2af1c:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 755e999a3e5aa2fd2528a2ddc6981f8a47a2af1c
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 3.0
+  real_effort: 7.02
+  for_experiment: false
+  description: |
+    Objetivo Profissional do Candidato
+    ------------------------
+    O campo com rótulo “Áreas de interesse” passará a ter o rótulo “Objetivo Profissional”.
+    Continuará a ser o mesmo campo de texto e esta seção também vai ter uma parte para o candidato classificar o seu objetivo profissional descrito, em uma ou até cinco combinações de níveis e áreas de atuação.
+    Os níveis e áreas de atuação são os mesmos que aparecem para serem selecionados ao cadastrar uma experiência profissional.
+    O candidato deverá cadastrar, obrigatoriamente, ao menos uma combinação.
+    Não poderá existir mais de uma combinação com o mesmo nível e área de atuação.
+    Dentro da seção “Objetivo Profissional” haverá um campo para o candidato informar a pretensão salarial.
+    O candidato poderá fazer no máximo 5 combinações.
+requirement_633d87959676ee50ae0d67dd00bd19975f50e563:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 633d87959676ee50ae0d67dd00bd19975f50e563
+  relative_starting_point: 0.126
+  relative_completeness: 0.1654
+  real_estimate: 6.0
+  real_effort: 6.84
+  for_experiment: false
+  description: |-
+    Painel de Controle de Vagas
+    ------------------------
+    Quando uma empresa visualiza os detalhes de uma vaga, os candidatos vinculados à vaga serão separados em duas seções:
+    * Candidatos que se candidataram a vaga por contra própria
+    * Candidatos convidados pela empresa
+
+
+    Ao visualizar um candidato que se candidatou à vaga por contra própria a empresa poderá convidá-lo para uma entrevista ou rejeitar o candidato.
+
+
+    Ao convidar um candidato para entrevista, o sistema enviará um e-mail com uma mensagem padrão de convite e ele aparecerá na relação de candidatos convidados pela empresa. (já existe esta funcionalidade quando o candidato é convidado pela empresa)
+    Após isso, a relação entre o candidato e vaga ficará pendente de aceitação por parte do candidato.
+    Se o candidato aceitar o convite ele poderá visualizar os dados de contato (a serem inseridos durante o processo de cadastro da vaga) da empresa para a entrevista e aparecerá na relação de convidados da vaga com status de aceite de convite.
+    Se rejeitar, ele aparecerá na relação de convidados, mas com status de recusa de convite.
+
+
+    Ao rejeitar um candidato, o sistema enviará um e-mail com uma resposta padrão e o candidato não aparecerá mais na relação de candidatos, nem poderá mais se candidatar a esta vaga. (a princípio a vaga não aparecerá mais nas buscas do candidato)
+
+
+    Ao fazer uma busca e convidar um candidato para a vaga, o processo será o mesmo de convite para a vaga descrito na relação de candidatos que se candidataram por conta própria.
+
+
+    Onde aparece hoje o número de candidatos, apenas na lista de candidatos convidados aparecerá as seguintes informações:
+    * Total de candidatos convidados
+    * Total de candidatos que aceitaram o convite
+    * Total de candidatos que recusaram o convite
+    * Total de candidatos que ainda não responderam ao convite
+requirement_c5227c1dfd9e6277d7812a12dc8c1c4b074fa0e9:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: c5227c1dfd9e6277d7812a12dc8c1c4b074fa0e9
+  relative_starting_point: 0.1275
+  relative_completeness: 0.1654
+  real_estimate: 2.0
+  real_effort: 2.54
+  for_experiment: false
+  description: |-
+    Redes sociais
+    ------------------------
+    No currículo do candidato ele poderá informar a url de acesso ao seus perfis nas seguintes redes sociais:
+    * Facebook
+    * Linkedin
+    * Twitter
+    Para cada opção, ele deverá informar a url de acesso em um campo de texto.
+requirement_48ec2b8b9e6cd0ce7c25e149fde4606dd559d156:
+  project: project_b1fc32a17081c0257c34ae208d9dc756714b343a
+  hashkey: 48ec2b8b9e6cd0ce7c25e149fde4606dd559d156
+  relative_starting_point: 0.1176
+  relative_completeness: 0.1483
+  real_estimate: 6.0
+  real_effort: 12.39
+  for_experiment: false
+  description: |
+    Seção Experiência Profissional no Currículo do Aluno
+    ------------------------
+    O campo atual de experiência profissional será removido.
+    Em seu lugar, o candidato terá que adicionar experiências preenchendo as seguintes informações para cada uma delas:
+    •*Nome da empresa (campo de texto simples)
+    •*Setor de atuação (lista de setores de atuação cadastrados no sistema)
+    •*Área de atuação (lista de áreas de atuação cadastrados no sistema)
+    •*Último cargo (campo de texto simples)
+    •*Nível (lista de níveis cadastrados no sistema)
+    •*Última remuneração (campo de texto com máscara para dinheiro R$ 99.999,99)
+    •*Período (data com formato MM/YYYY)
+    oDe
+    oAté
+    oCheckbox com label “atual” para marcar como emprego atual (ao marcar esta checkbox, a data do campo até será apagada e o campo desabilitado)
+    •Atividades realizadas (campo de texto)
+
+    Será permitido ao candidato adicionar múltiplas experiências profissionais.
+
+    Na visualização do currículo, a experiência profissional será listada da mais recente para a mais antiga.
+requirement_eee6f561b0ef82d37059c482ff342249db8b98bc:
+  project: project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  hashkey: eee6f561b0ef82d37059c482ff342249db8b98bc
+  relative_starting_point: 0.9891
+  relative_completeness: 0.8661
+  real_estimate: 3.0
+  real_effort: 4.02
+  for_experiment: false
+  description: |
+    Cadastro de Usuários
+    ------------------------
+    Na criação do sindicato, inserir botão 'Ocultar configurações de e-mail para Sindicato'.
+    Premissas:
+    •Se estiver oculto, as configurações assumidas deverão ser as de administrador.
+    •Se Estiverem visíveis ao sindicato e não preenchidas, as configurações assumidas deverão ser as de administrador.
+    •Se Estiverem visíveis ao sindicato e preenchidas estas configurações d e-mail devem ser aplicadas ao mecanismo de envio de e-mails do sindicato.
+requirement_839d2ae5d680082df4a3f52b93735b1a3da1846c:
+  project: project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  hashkey: 839d2ae5d680082df4a3f52b93735b1a3da1846c
+  relative_starting_point: 0.0172
+  relative_completeness: 0.4675
+  real_estimate: 3.0
+  real_effort: 0.96
+  for_experiment: false
+  description: |-
+    Corrigir erro no disparo de e-mail
+    ------------------------
+    O sistema não dispara email ao criar uma empresa. Ao Preencher todos os campos corretamente da eleição e clicar no botão 'Salvar', o sistema permanece na tela com o loading. Apesar disso, ao pesquisar na index, o é possível observar que a eleição foi salva, mas nenhum email disparado.
+
+    - Acessar o sistema.
+    - Ir na tela referente a 'Nova Eleição'.
+    - Preencher todos os campos corretamente.
+    - Selecionar empresas com emails válidos e que o usuário tenha acesso.
+    - Clicar no botao salvar.
+requirement_5fdca4ed59de5b616b21ae4e91126cc9f60d0e13:
+  project: project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  hashkey: 5fdca4ed59de5b616b21ae4e91126cc9f60d0e13
+  relative_starting_point: 0.0
+  relative_completeness: 0.0
+  real_estimate: 2.0
+  real_effort: 2.41
+  for_experiment: false
+  description: |-
+    Implementar nova funcionalidade de envio de e-mail quando a eleição é criada
+    ------------------------
+    Em resumo, o e-mail que dispara as credenciais de acesso de uma empresa deverá ser disparado no momento em que é criada a eleição e são vinculadas suas respectivas empresas votantes.
+
+    OBS: se uma empresa foi cadastrada e por algum motivo não foi selecionada para votar, esta não receberá o e-mail com o login e senha.
+
+    OBS 2: Como a senha é criptografada no banco de dados da aplicação, esta pode ser redefinida no ato do disparo do e-mail com login e senha, conforme premissas descritas acima.
+requirement_76b72c5630314273992c829f8428173f2ec7926d:
+  project: project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  hashkey: 76b72c5630314273992c829f8428173f2ec7926d
+  relative_starting_point: 0.0
+  relative_completeness: 0.0
+  real_estimate: 1.0
+  real_effort: 1.61
+  for_experiment: false
+  description: |-
+    Incluir o CPF do responsável pela empresa no formulários de cadastro
+    ------------------------
+    O cliente quer que seja incluído um campo no formulário de cadastro de empresa para que seja incluído o CPF do responsável.
+
+    O campo será de preenchimento obrigatório.
+
+    A mensagem de validação deve ser \"O CPF do responsável não pode ficar em branco\".
+
+    O campo deve possuir máscara para CPF e validação de dígito verificador.
+requirement_a8931b3e0a9afed93abdb331e51a6be4e2ad5fb8:
+  project: project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  hashkey: a8931b3e0a9afed93abdb331e51a6be4e2ad5fb8
+  relative_starting_point: 0.9859
+  relative_completeness: 0.7726
+  real_estimate: 3.0
+  real_effort: 2.81
+  for_experiment: false
+  description: |
+    Modificações - Usuario Administrador
+    ------------------------
+    Usuairo Administrador:
+
+    •Retirar a possibilidade de alteração de perfil por usuário. Usaremos a opção de inativar e outro usuário será criado caso necessário.
+    •Incluir o campo CNPJ como obrigatório no cadastro de um sindicato.
+    •Mudar lable do campo 'Endereço'  no cadastro de um sindicato para 'Endereço Sede'.
+requirement_3d6c93f0e42e66e71532eb3bc87b46b7bbcdd614:
+  project: project_b3bc254985bbd1eebcbfeaffcf16fe228b24d9af
+  hashkey: 3d6c93f0e42e66e71532eb3bc87b46b7bbcdd614
+  relative_starting_point: 0.0
+  relative_completeness: 0.0
+  real_estimate: 1.0
+  real_effort: 0.34
+  for_experiment: false
+  description: |-
+    Remover a funcionalidade de envio de e-mail com login e senha quando a empresa é cadastrada
+    ------------------------
+    O sistema hoje envia um e-mail para a empresa com login e senha para acesso ao sistema quando ela é cadastrada.
+
+    Essa funcionalidade deve ser removida.
+requirement_d9a2159e3cec132ed6ae63a1d5d73367e9668b40:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: d9a2159e3cec132ed6ae63a1d5d73367e9668b40
+  relative_starting_point: 0.6474
+  relative_completeness: 0.2924
+  real_estimate: 2.0
+  real_effort: 2.19
+  for_experiment: true
+  description: |-
+    Administração de Ouvidoria - Parte 002
+    ------------------------
+    Na controller ouvidoria deverá ser criado uma action mostrar. Nessa action devera ser possível criar Ações para essa manifestação.
+
+    A tabela Ações tera os seguintes campos:
+    - ouvidoria_id: integer;
+    - descricao: text;
+    - usuario_id: integer;
+
+    Não será possível Editar ação.
+requirement_ed4c59661217f1bc637b31adc4e7e228b1746ee9:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: ed4c59661217f1bc637b31adc4e7e228b1746ee9
+  relative_starting_point: 0.6145
+  relative_completeness: 0.2465
+  real_estimate: 1.0
+  real_effort: 1.78
+  for_experiment: true
+  description: |+
+    Criar Controlers Atas
+    ------------------------
+    Criar uma Controle Atas dentro do namespace legislacao. Nela terá apenas as actions index e mostrar.
+
+    Na action index deverá ter filtros por periodo.
+    E Listara apenas os campos Titulo e Data;
+
+    E na action mostrar exibira todos os dados de forma detalhada.
+
+    Obs.: No campo arquivo teremos um endereço de um arquivo. Criar um link que abra em outra janela para download do arquivo.
+
+
+
+
+
+
+requirement_53aab952fe2642f82a61477346afcd5aa4ef8cbd:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 53aab952fe2642f82a61477346afcd5aa4ef8cbd
+  relative_starting_point: 0.6144
+  relative_completeness: 0.2465
+  real_estimate: 1.0
+  real_effort: 0.18
+  for_experiment: true
+  description: |+
+    Criar Tabela de Atas
+    ------------------------
+    Criar Uma tabela chamada Atas com os seguintes campo:
+    - Data: date
+    - Descrição: text
+    - Titulo: string
+    - Arquivo: string
+
+
+
+requirement_917c440eb17e4911a37be6bc35641dadfa4fa212:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 917c440eb17e4911a37be6bc35641dadfa4fa212
+  relative_starting_point: 0.6887
+  relative_completeness: 0.4246
+  real_estimate: 1.0
+  real_effort: 0.44
+  for_experiment: true
+  description: |-
+    Criar Tabela de Bens dos Vereadores
+    ------------------------
+    Criar Tabela de Bens dos Vereadores com os seguintes campos:
+    - ano;
+    - vereador_id;
+    - arquivo;
+requirement_52aed733e0e2e0ad641df674a9c60259a5abfd3a:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 52aed733e0e2e0ad641df674a9c60259a5abfd3a
+  relative_starting_point: 0.6876
+  relative_completeness: 0.4152
+  real_estimate: 1.0
+  real_effort: 0.45
+  for_experiment: true
+  description: |
+    Criar Tabela de Despesas de Departamentos
+    ------------------------
+    Criar Tabela e model de Despesas de Departamentos. Ela deve ter os seugintes campos:
+    - ano;
+    - arquivo;
+requirement_6a0f48dd9f5aac647a15c0ff3d627c2a7ca16d8b:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 6a0f48dd9f5aac647a15c0ff3d627c2a7ca16d8b
+  relative_starting_point: 0.6189
+  relative_completeness: 0.2511
+  real_estimate: 1.0
+  real_effort: 0.56
+  for_experiment: true
+  description: |+
+    Criar Tabela de Ouvidoria
+    ------------------------
+    Criar Tabela de Ouvidoria com os seguintes campos:
+    - codigo: string
+    - nome:string;
+    - endereco: string;
+    - cep: string;
+    - bairro: string;
+    - telefone: string;
+    - email: string;
+    - tipo: integer;
+    - descricao: interger;
+    - situacao: integer;
+    - arquivo: string;
+
+    Tipos de Ouvidoria:
+    - Reclamação
+    - Sugestão
+    - Elogio
+    - Crítica
+    - Informação
+
+    Situações de Ouvidoria:
+    - Aberto;
+    - Em Andamento;
+    - Concluido;
+
+    Ao criar uma nova ouvidoria, o sistema deve gerar o codigo usando a seguinte regra:
+    {ANO_INVERTIDA}.{NUMERO_SEQUENCIAL}
+    Ex.:
+    20130405.0000001
+    20130406.0000002
+
+
+
+
+requirement_060f1d1d69ed9726758f4968e1d3ddaa4edc4c44:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 060f1d1d69ed9726758f4968e1d3ddaa4edc4c44
+  relative_starting_point: 0.6146
+  relative_completeness: 0.2469
+  real_estimate: 1.0
+  real_effort: 0.3
+  for_experiment: true
+  description: |
+    Criar Tabela de Tramites
+    ------------------------
+    Criar a Tabela de Tramites com os seguintes campos:
+    - numero: integer;
+    - data_envio: date;
+    - date_final: date;
+    - destino: string;
+    - resposta: string;
+    - propositura_id: integer;
+
+    Criar os relacionamentos entre Proposituras e Tramites.
+requirement_a467963251093d223ac4fc3e43d1c26f513255a0:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: a467963251093d223ac4fc3e43d1c26f513255a0
+  relative_starting_point: 0.615
+  relative_completeness: 0.25
+  real_estimate: 1.0
+  real_effort: 0.48
+  for_experiment: true
+  description: |+
+    Criar Tabela Leis
+    ------------------------
+    Criar a Tabela de Leis com os seguintes campos:
+    - numero: string
+    - situação: integer
+    - data: date
+    - assunto: text
+    - arquivo: string
+    - classificacao_id: integer
+
+    O Campo arquivo terá o endereço de um arquivo.
+
+    O campos Tipo tera os seguinte:
+    - Leis Municipais
+    - Leis Complementares
+    - Decretos Municipais
+    - Decretos Legislativos
+    - Resoluções Municipais
+    - Emenda à Lei Orgânica
+
+    O campo situação terá as seguintes situações:
+    - Declarada inconstitucional pelo TJSP
+    - Em vigor
+    - Fins específicos
+    - Revogada
+    - Revogada implicitamente
+    - Revogada por Consolidação
+    - Revogado
+    - Suspensa por determinação do TJSP
+
+requirement_5508eaa097b22195524d8ff4e7d90a34f54c1c2a:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 5508eaa097b22195524d8ff4e7d90a34f54c1c2a
+  relative_starting_point: 0.6537
+  relative_completeness: 0.3165
+  real_estimate: 2.0
+  real_effort: 1.91
+  for_experiment: true
+  description: "Leitura\n------------------------\nInserir um campo flag campos_lidos
+    do tipo  integer na tabela ouvidoria.\n\nToda vez que o cidadão inserir um Comentario
+    (Ação) em uma Manifestação o sistema deve marcar esse campo com 1.\n\nSe o campo
+    leitura estiver = 1 a manifestação deve aparecer em destaque na tela de minhas
+    Manifestações. \n\n\n"
+requirement_73b27fdeafde7d307c5703f4a0cbc45e30b8f299:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 73b27fdeafde7d307c5703f4a0cbc45e30b8f299
+  relative_starting_point: 0.6887
+  relative_completeness: 0.4246
+  real_estimate: 3.0
+  real_effort: 1.14
+  for_experiment: true
+  description: "Manter Bens dos Vereadores\n------------------------\nNo Namespace
+    Administração deve ser criado um crud de Bens dos Vereadores. \n\nA index deve
+    listar os dados por ano em ordem decrescente e paginado.\n\nNo formulario de Criação/Edição,
+    permitir fazer upload de um arquivo. Salvar o endereço no campo arquivo. Na tela
+    de editar, o sistema não deve apagar o arquivo já enviado se o não for selecionado
+    um arquivo novo.\n\nTodos os Campos são obrigatorio. (Cuidado, na tela de edicão,
+    o sistema n deve obrigar o usuario a subir novamente o mesmo aquivo já enviado,
+    e nem apagar o arquivo já enviado se um novo n for selecionado).\n\nA exclusão
+    será fisica. \n\nColocar um Autocomplete para selecionar um vereador.\n\n"
+requirement_dcbcc8d9fcc803fe1362eb6ff210b8ad63013e8f:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: dcbcc8d9fcc803fe1362eb6ff210b8ad63013e8f
+  relative_starting_point: 0.6876
+  relative_completeness: 0.4152
+  real_estimate: 2.0
+  real_effort: 2.38
+  for_experiment: true
+  description: "Manter Despesas dos Departamentos\n------------------------\nNo Namespace
+    Administração deve ser criado um crud de Despesas de Departamento. \n\nA index
+    deve listar os dados por ano em ordem decrescente e paginado.\n\nNo formulario
+    de Criação/Edição, permitir fazer upload de um arquivo. Salvar o endereço no campo
+    arquivo. Na tela de editar, o sistema não deve apagar o arquivo já enviado se
+    o não for selecionado um arquivo novo.\n\nTodos os Campos são obrigatorio. (Cuidado,
+    na tela de edicão, o sistema n deve obrigar o usuario a subir novamente o mesmo
+    aquivo já enviado, e nem apagar o arquivo já enviado se um novo n for selecionado).\n\nA
+    exclusão será fisica. \n\n\n"
+requirement_4ddc58853744e2a7a0f075976c5ab24698818042:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 4ddc58853744e2a7a0f075976c5ab24698818042
+  relative_starting_point: 0.6876
+  relative_completeness: 0.4152
+  real_estimate: 4.0
+  real_effort: 4.2
+  for_experiment: true
+  description: "Manter Despesas dos Vereadores\n------------------------\nno Namespace
+    de Administração criar um crud de Despeas de Vereadores.\n\nNa Action index terá
+    os seguintes filtros:\n- Ano; (select) (Fazer um distinct no banco para saber
+    quais anos existem no sistema);\n- Mes; (select)\n- Vereadores: Campo texto para
+    pesquisa;\n- Os registros deve estar listados de forma decrescente de mes e ano
+    e de forma paginada.\n\nNo formulario de Criação/Edição, permitir fazer upload
+    de um arquivo. Salvar o endereço no campo arquivo. Na tela de editar, o sistema
+    não deve apagar o arquivo já enviado se o não for selecionado um arquivo novo.\n\nTodos
+    os Campos são obrigatorio. (Cuidado, na tela de edicão, o sistema n deve obrigar
+    o usuario a subir novamente o mesmo aquivo já enviado, e nem apagar o arquivo
+    já enviado se um novo n for selecionado).\n\nColocar um autocomplete para selecionar
+    o vereador.\n\nA exclusão será fisica. \n"
+requirement_13f240b58e463fcf93ec87524bbe28d1a54778d8:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 13f240b58e463fcf93ec87524bbe28d1a54778d8
+  relative_starting_point: 0.8082
+  relative_completeness: 0.6359
+  real_estimate: 2.0
+  real_effort: 2.16
+  for_experiment: true
+  description: "Manter UploadViagens\n------------------------\nNa Area administrativas
+    criar o CRUD de UploadViagens.\n\nA index deve listar os dados por ano/mes em
+    ordem decrescente e paginado.\n\nNo formulario de Criação/Edição, permitir fazer
+    upload de um arquivo. Salvar o endereço no campo arquivo. Na tela de editar, o
+    sistema não deve apagar o arquivo já enviado se o não for selecionado um arquivo
+    novo.\n\nTodos os Campos são obrigatorios. (Cuidado, na tela de edicão, o sistema
+    n deve obrigar o usuario a subir novamente o mesmo aquivo já enviado, e nem apagar
+    o arquivo já enviado se um novo n for selecionado).\n\nA exclusão será fisica.
+    \n\n"
+requirement_152214a797fe71c4aedafd797eb087ec17e0e5bf:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 152214a797fe71c4aedafd797eb087ec17e0e5bf
+  relative_starting_point: 0.6474
+  relative_completeness: 0.2924
+  real_estimate: 1.0
+  real_effort: 0.31
+  for_experiment: true
+  description: |
+    Modificar Pesquisa de Solicitação
+    ------------------------
+    Na tela de consultar Manifestação alem de pedir o código do Manifestação também pedir o email do solicitante.
+requirement_062d0c5ef88ef387d73c4ac6fdbb94e5a3b227c4:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 062d0c5ef88ef387d73c4ac6fdbb94e5a3b227c4
+  relative_starting_point: 0.9615
+  relative_completeness: 0.9371
+  real_estimate: 4.0
+  real_effort: 12.23
+  for_experiment: true
+  description: "Criar tela de exibição dos contratos \n------------------------\nCriar
+    a tela de visualização dos dados de Contrato no modulo de despesa.\n\nDevera ser
+    criado um outro radiobuntom para exibição dos contratos. \n\nNa Listagem deverá
+    conter os seguintes campos:\n NOME_FORNECEDOR,\n VALOR_CONTRATO,\n NRO_PROCESSO,\n
+    DATA_CONTRATO\n\nE deverá ter um link Exibir. No link Exibir abrira uma tela com
+    os seguintes dados:\n NOME_FORNECEDOR,\n CNPJ,\n OBJETO,\n VALOR_CONTRATO,\n NRO_PROCESSO,\n
+    DESCRICAO_CONTRATO,\n DATA_CONTRATO,\n DATA_INICIO,\n DATA_TERMINO,\n ANO_PROCESSO,\n
+    VIGENCIA\n\nOs filtros na listagem de index deveram ser os seguintes:\nVIGENCIA\nPeriodp:
+    Intervalo (usar o campos DATA_CONTRATO).\nNOME_FORNECEDOR,\nDescrição: Ira pesquisar
+    nos seguintes campos: DESCRICAO_CONTRATO e OBJETO\n"
+requirement_08c3b5ead38111be08392be71e684a115e64e030:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 08c3b5ead38111be08392be71e684a115e64e030
+  relative_starting_point: 0.7621
+  relative_completeness: 0.5742
+  real_estimate: 1.0
+  real_effort: 0.36
+  for_experiment: true
+  description: "Textos\n------------------------\n- Trocar o titulo principal da home
+    do sistema;\n- Trocar texto do endereço da camara do roda pé do layout. "
+requirement_70d541c5f87408e9cfe892bcdee57e5499557db9:
+  project: project_bd39cbc84985cdcaf2990022eb0b0f3a74b01fa6
+  hashkey: 70d541c5f87408e9cfe892bcdee57e5499557db9
+  relative_starting_point: 0.8082
+  relative_completeness: 0.6359
+  real_estimate: 2.0
+  real_effort: 1.88
+  for_experiment: true
+  description: "Upload de Cargos\n------------------------\nCriar uma controller Cargos
+    na area administrativa do sistema.\n\nEla tera apenas duas actions:\n- Index;\n-
+    Enviar;\n\nA index listara um formulario para fazer o upload de um arquivo e um
+    link para o mesmo se ele já tiver sido enviado.\n\nA action de enviar, terá uma
+    rotina que recebe o arquivo e o salva em um local especifico com o nome:\nsalario_cargos.pdf.
+    \n\nNão permitir arquivo com extensão diferente de PDF.\n\n"
+requirement_f8920e7d8610101c3c5d3d931e9182354dc2d980:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: f8920e7d8610101c3c5d3d931e9182354dc2d980
+  relative_starting_point: 0.358
+  relative_completeness: 0.4297
+  real_estimate: 2.0
+  real_effort: 2.62
+  for_experiment: false
+  description: |+
+    Busca em notícias
+    ------------------------
+    Esse campo será localizado no canto superior direito do site;
+
+    Ao submeter valores no campo. A lista de notícias deve ser exibida filtrando as notícias por Título e Conteúdo.
+
+    As notícias exibidas devem ser agrupadas por categoria. Seguindo o mesmo Layout da Paginas de Notícias.
+
+requirement_d63dfe49d8aad7a2e372371f333f0a358a4d549f:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: d63dfe49d8aad7a2e372371f333f0a358a4d549f
+  relative_starting_point: 0.3631
+  relative_completeness: 0.4633
+  real_estimate: 1.0
+  real_effort: 0.62
+  for_experiment: false
+  description: |-
+    Campo contato em usuários
+    ------------------------
+    Adicionar um campo boolean chamado contato ;
+
+    Quem estiver com esse campo como verdadeiro, deverá receber o email provindo do formulário de contato;
+requirement_a42a34bcb7ce30b8926416ee190b8f0a98d7b9c3:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: a42a34bcb7ce30b8926416ee190b8f0a98d7b9c3
+  relative_starting_point: 0.1989
+  relative_completeness: 0.2285
+  real_estimate: 0.5
+  real_effort: 0.35
+  for_experiment: false
+  description: |-
+    Criar menu \"Administrativo\" para layout
+    ------------------------
+    O menu terá os seguintes links:
+    - Usuários;
+    - Tags;
+    - Categorias;
+    - Notícias;
+    - Link para Logout;
+
+    Nesse momento não é necessário apontar os links para suas páginas.
+requirement_718613fbeccb77a4898806fe62fb9860c0fce6ce:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 718613fbeccb77a4898806fe62fb9860c0fce6ce
+  relative_starting_point: 0.2917
+  relative_completeness: 0.3184
+  real_estimate: 2.0
+  real_effort: 0.57
+  for_experiment: false
+  description: |
+    CRUD Categorias
+    ------------------------
+    Acessível apenas no namespace \"Administracao\".
+
+    Com os campos:
+    - Nome: string (Preenchimento Obrigatório e único levando em conta o case sensitive);
+    - Status: boolean;
+
+    Uma categoria nunca poderá ser excluída, apenas inativada.
+requirement_43ebfdfdda8c83c9682df17a25d49ae23d50158e:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 43ebfdfdda8c83c9682df17a25d49ae23d50158e
+  relative_starting_point: 0.1991
+  relative_completeness: 0.2285
+  real_estimate: 4.0
+  real_effort: 4.59
+  for_experiment: false
+  description: "CRUD de Usuário\n------------------------\nFará parte do namespace
+    \\\"Administracao\\\";\n\nCom os seguintes campos:\nnome: string (Campo Obrigatório)\nemail:
+    string (Campo Obrigatório e deve ser único)\nsenha: string (Campo Obrigatório)\nmoderador:
+    boolean \nstatus: boolean\n\nDeverá ter o campo de confirmar senha no formulário
+    de criação/edição.\n\nNa tela de Listagem deverá ter um filtro de pesquisa que
+    buscará nos campos: nome, email, login; e um filtro de status.\n\nUm usuário nunca
+    poderá se excluido fisicamente, apenas será inativado.\n\n"
+requirement_8cf4b2904485c3290eb10996e09f860d603958ab:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 8cf4b2904485c3290eb10996e09f860d603958ab
+  relative_starting_point: 0.2964
+  relative_completeness: 0.3438
+  real_estimate: 2.0
+  real_effort: 4.3
+  for_experiment: false
+  description: |-
+    CRUD Notícias
+    ------------------------
+    Deve ser apenas acessível no namespace \"Administração\"
+
+    Com os campos:
+    titulo: string (Campo Obrigatório)
+    categoria_id: integer(Campo Obrigatório)
+    tag_id: integer
+    conteúdo: text (Campo Obrigatório)(Esse campo usará CKEditor)
+    Destaque: boolean (Sim ou Não)
+    usuario_id: integer (Usuário criador, Campo Obrigatório)
+    Situação: integer (Rascunho, Revisão, Aprovado, Reprovado)
+
+    Ao Criar uma nova notícia, ela deverá estar com a situação \"Rascunho\".
+
+    Deve ser possível “Visualizar” a notícia antes de ser solicitada sua revisão.
+requirement_dc9a6664ccb00b4f33a90a4badc04b0b6723dea9:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: dc9a6664ccb00b4f33a90a4badc04b0b6723dea9
+  relative_starting_point: 0.2005
+  relative_completeness: 0.2285
+  real_estimate: 2.4
+  real_effort: 1.19
+  for_experiment: false
+  description: |
+    CRUD Tags
+    ------------------------
+    Ele deverá estar dentro do namespace \"Administracao\".
+
+    Com o seguintes campos:
+    nome: string (Preenchimento Obrigatório e único levando em conta o case sensitive)
+    status: boolean
+
+    Uma Tag nunca poderá ser excluída, apenas inativada.
+requirement_355e53bc2b31bdad64f46453593ccc7e6fdfdb42:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 355e53bc2b31bdad64f46453593ccc7e6fdfdb42
+  relative_starting_point: 0.4271
+  relative_completeness: 0.4798
+  real_estimate: 4.0
+  real_effort: 3.9
+  for_experiment: false
+  description: |
+    Instalação do Plugin de Comentário Facebook
+    ------------------------
+    Para a página de notícias.
+
+    Utilizar o plugin em JavaScript ou o JavaScript API.
+requirement_665ff5aeae80399bc796b63d573172627b919efd:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 665ff5aeae80399bc796b63d573172627b919efd
+  relative_starting_point: 0.2923
+  relative_completeness: 0.3319
+  real_estimate: 3.0
+  real_effort: 2.63
+  for_experiment: false
+  description: "Manter Configurações\n------------------------\nDeverá existir um
+    módulo Configuração onde o usuário deverá preencher os seguintes campos: \n\n-
+    Mobilidade: text (Obrigatório) (CKEditor)\n- Fábrica de Software: text (Obrigatório)
+    (CKEditor)\n- Soluções Governo: text (Obrigatório) (CKEditor) \n- Quem Somos:
+    text (Obrigatório)\n- mapa: upload de imagem\n\nTodos estes campos serão de preenchimento
+    obrigatório, tendo em vista que estas informações serão apresentadas em seções
+    do site. \n\nO sistema criará com \\\"lorem ipsum\\\" os dados para estes atributos.
+    Os dados serão preenchidos através do CKEDITOR. \n\nDeverá existir um campo para
+    a realização de upload de uma imagem que será apresentado na HOME do site na área
+    de atuação. "
+requirement_fb6430e14081175c952edd180dc62df17c9d40b9:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: fb6430e14081175c952edd180dc62df17c9d40b9
+  relative_starting_point: 0.3605
+  relative_completeness: 0.441
+  real_estimate: 1.0
+  real_effort: 1.01
+  for_experiment: false
+  description: |-
+    Página de Contato
+    ------------------------
+    Com um formulário com os campos obrigatórios:
+    -Nome;
+    -Email;
+    -Mensagem;
+
+    Ao submeter o formulário, deve ser enviado um email com esses dados para todos os moderadores do sistema.
+requirement_6589622067655556c2656e89ddef7691ac8c13b7:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 6589622067655556c2656e89ddef7691ac8c13b7
+  relative_starting_point: 0.3199
+  relative_completeness: 0.3871
+  real_estimate: 1.0
+  real_effort: 0.55
+  for_experiment: false
+  description: |-
+    Pesquisa na Index de Notícias
+    ------------------------
+    Pesquisa pelos campos título e conteúdo.
+requirement_f17418e50c7919ebfd2050176ac24a2231bf1a06:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: f17418e50c7919ebfd2050176ac24a2231bf1a06
+  relative_starting_point: 0.3199
+  relative_completeness: 0.3871
+  real_estimate: 1.0
+  real_effort: 2.07
+  for_experiment: false
+  description: |-
+    Pesquisa na Index de Usuários
+    ------------------------
+    Pesquisa pelos campos nome, email e status (select)
+requirement_81c845fb83eccc98d039c8ad7b96f28474d9478c:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: 81c845fb83eccc98d039c8ad7b96f28474d9478c
+  relative_starting_point: 0.3375
+  relative_completeness: 0.4126
+  real_estimate: 1.0
+  real_effort: 1.05
+  for_experiment: false
+  description: |-
+    Preenchimento automático de data de aprovação da notícia
+    ------------------------
+    Quando a notícia for aprovada, o campo de data de aprovação deve ser preenchida
+requirement_c844112fab734a5f11a7a8bf589a18ec6030e1c4:
+  project: project_2ac9ed078f15138a9f7567704fa01004a7a9d620
+  hashkey: c844112fab734a5f11a7a8bf589a18ec6030e1c4
+  relative_starting_point: 0.3145
+  relative_completeness: 0.3676
+  real_estimate: 2.0
+  real_effort: 2.84
+  for_experiment: false
+  description: |-
+    Tela de revisão de conteúdo
+    ------------------------
+    Deve ser apenas acessível para usuários moderadores.
+
+    Nessa tela serão exibidos os detalhes da notícia e dois botões(ou links): Aprovar ou Reprovar.
+
+    Caso o usuário moderador aprove, a notícia passará para o status Aprovada;
+
+    Caso o usuário moderador reprove, a notícia passará para o status Reprovada.
+requirement_ac21ac302e31997eed642b5ced387b3eff68bdec:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: ac21ac302e31997eed642b5ced387b3eff68bdec
+  relative_starting_point: 0.0002
+  relative_completeness: 0.0
+  real_estimate: 3.0
+  real_effort: 14.98
+  for_experiment: false
+  description: |+
+    Agendamento de Questões - Parte I
+    ------------------------
+    Criar a tabela agendamentos com os seguintes campos:
+
+    * aluno_id;
+    * turma_id;
+    * questao_id;
+    * meio;
+    * data_envio;
+    * hora_envio;
+    * situacao (EM ESPERA = 1, ENVIADO = 2 e Respondido =3);
+    * entidade_id
+
+
+    Deverá existir um crud por entidade e para o administrador geral onde ele possa acompanhar as questões armazenadas.
+
+requirement_efc09085cee378ee88f1c2da492ecc5a962331e0:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: efc09085cee378ee88f1c2da492ecc5a962331e0
+  relative_starting_point: 0.5675
+  relative_completeness: 0.6622
+  real_estimate: 1.0
+  real_effort: 1.07
+  for_experiment: false
+  description: |
+    Layout Logos
+    ------------------------
+    Na logo no topo da pagina, o colocar margin em cima e em baixo, diminuindo um pouco a altura da imagem.
+requirement_998ffec49ad6f96c3c1cf3c120f02d62694affa1:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: 998ffec49ad6f96c3c1cf3c120f02d62694affa1
+  relative_starting_point: 0.603
+  relative_completeness: 0.7425
+  real_estimate: 1.0
+  real_effort: 0.93
+  for_experiment: false
+  description: |-
+    Layout Mobile
+    ------------------------
+    No layout Mobile colocar um div na parte de baixo com 100px de algura invisivel para criar uma margem na parte de baixo da tela.
+requirement_c6901150833d069c5643d7c5c58a0234b4962bdb:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: c6901150833d069c5643d7c5c58a0234b4962bdb
+  relative_starting_point: 0.6355
+  relative_completeness: 0.7931
+  real_estimate: 4.0
+  real_effort: 8.14
+  for_experiment: false
+  description: |+
+    Manter Horarios de Envio
+    ------------------------
+    Manter Horarios.
+
+    Cada contrato aluno terá varios horarios de Envio. Com os seguintes campos:
+    - contrato_aluno_id;
+    - meio;
+    - horario;
+
+    Esse horarios serão seguidos para envio das questões;
+
+requirement_e424f04e791420b6098470b442aeea7348957184:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: e424f04e791420b6098470b442aeea7348957184
+  relative_starting_point: 0.0749
+  relative_completeness: 0.1021
+  real_estimate: 6.0
+  real_effort: 8.78
+  for_experiment: false
+  description: |+
+    Matrícula - Parte I
+    ------------------------
+    Deverá ser criado a tabela matriculas com os seguintes campos:
+
+    * aluno_id;
+    * turma_id;
+    * status: ATIVO/INATIVO
+
+    Deverá existir uma interface com os seguintes filtros:
+
+    * Mês de Início da Turma;
+    * Módulo de Aprendizagem;
+    * Turno;
+
+
+    As turmas deverão ser listadas dentro de uma tabela que mostra os dias da semana. AO clicar em uma turma um modal box deverá ser aberto onde o usuário possa escolher um aluno da entidade. Lembrando que o aluno deverá possuir um contrato ATIVO (VIGENTE).
+
+    Ao selecionar o aluno pesquisado. O sistema deverá verificar se o mesmo já não está matriculado nesta turma ou em alguma outra turma com este mesmo horário. O sistema também deverá verificar se o aluno já não cursou este módulo.
+
+    Ao matricular o aluno um e-mail deverá ser enviado para o mesmo informando.
+
+requirement_20e4ddb193ffaefe7ff2c8f35c56631765555d46:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: 20e4ddb193ffaefe7ff2c8f35c56631765555d46
+  relative_starting_point: 0.0749
+  relative_completeness: 0.1021
+  real_estimate: 2.0
+  real_effort: 0.49
+  for_experiment: false
+  description: |-
+    Matrícula Parte II
+    ------------------------
+    Na interface \"show\" de turma deverão ser listados todos os alunos matrículados na mesma. Deverá existir um link que permita que eu inative a matrícula deste aluno para com a turma.
+requirement_07b6d40098ddf36ab4fb056eef4bc24fc32e0125:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: 07b6d40098ddf36ab4fb056eef4bc24fc32e0125
+  relative_starting_point: 0.5675
+  relative_completeness: 0.6622
+  real_estimate: 1.0
+  real_effort: 0.69
+  for_experiment: false
+  description: |-
+    Ordenar Questões
+    ------------------------
+    Na listagem de questões do Aluno, ordenar por data de criação (da mais antiga para a mais nova).
+requirement_9375e5c5b97eb84df25ec75ee44b539cf3bb7034:
+  project: project_7459a32db026f1945c0e899558512e9f93b24f83
+  hashkey: 9375e5c5b97eb84df25ec75ee44b539cf3bb7034
+  relative_starting_point: 0.6524
+  relative_completeness: 0.8209
+  real_estimate: 1.0
+  real_effort: 0.8
+  for_experiment: false
+  description: |+
+    Validação solicitar Qustão - Parte 001/3
+    ------------------------
+    Criar campo na tabela Agendas:
+    - solicidata: boolean
+
+    Quando um aluno faz uma solicitação, o sistema deve marcar esse campo com true.
+
+requirement_5ee385506ee5b26c08eb1990e80fc54b1b8215df:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 5ee385506ee5b26c08eb1990e80fc54b1b8215df
+  relative_starting_point: 0.1964
+  relative_completeness: 0.5395
+  real_estimate: 2.0
+  real_effort: 1.97
+  for_experiment: false
+  description: |-
+    Inserir Campos em Relatos
+    ------------------------
+    Deverão ser criados os seguintes campos na tabela de relatos:
+
+    * data_criacao_registro (Ao criar o relato este campo deve ser preenchido)
+    * data_revisao (Ao solicitar revisão esse campo deve ser preenchido)
+    * data_aprovado (Ao ser aprovado este campo deve ser preenchido)
+    * data_reprovado ( Ao ser reprovado este campo deve ser preenchido)
+    * data_em_analise (Quando estiver em análise este campo deve ser preenchido)
+
+    * Pedido (Este campo deverá ser inserido na view) (Será um campo Text Area).
+    * Advertência (Este campo também é um campo text area).
+
+    Essas informações deverão ser colocadas na impressão do relato caso ele tenha sido preenchido.
+requirement_988d6521d172f351ac12ca8a9dce8ec4b223e133:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 988d6521d172f351ac12ca8a9dce8ec4b223e133
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 2.0
+  real_effort: 0.56
+  for_experiment: false
+  description: |-
+    Manter Audiência
+    ------------------------
+    O sistema deverá permitir que para um relato sejam cadastrados audiências. Para realizar um cadastro as seguintes informações são obrigatórias:
+
+    * DATA (Não permitir listar sábados/Domingo)
+    * HORARIO
+    * DESCRICAO
+    * LOCAL
+    * COD_RELATO
+
+    Regras de Negócio
+
+    * O campo DATA é de preenchimento obrigatório
+    * O campo HORARIO é de preenchimento obrigatório
+    * O campo LOCAL é de preenchimento obrigatório
+    * O campo COD_RELATO é de preenchimento obrigatório
+requirement_2e189bf391b179534d04f1dfceb8b8495725e83b:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 2e189bf391b179534d04f1dfceb8b8495725e83b
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 2.0
+  real_effort: 2.97
+  for_experiment: false
+  description: |-
+    Manter Fato
+    ------------------------
+    O sistema deverá permitir que para um relato sejam cadastrados audiências. Para realizar um cadastro as seguintes informações são obrigatórias:
+
+    * NOME
+    * ARQUIVO (UPLOAD)
+    * COD_RELATO
+
+    Regras de Negócio
+
+    * O campo NOME é de preenchimento obrigatório
+    * O campo ARQUIVO é de preenchimento obrigatório
+    * O campo COD_RELATO é de preenchimento obrigatório
+requirement_04694b4bf0ede49f1f30a226ecf6ce893bba38d3:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 04694b4bf0ede49f1f30a226ecf6ce893bba38d3
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 2.0
+  real_effort: 0.96
+  for_experiment: false
+  description: |-
+    Manter Histórico Ação
+    ------------------------
+
+    O sistema deverá permitir que os usuários cadastrem ações. Para cadastrar uma ação os seguintes campos devem ser preenchidos:
+
+    * DATA
+    * TITULO
+    * DESCRICAO
+    * COD_RELATO
+requirement_600f81753592452be3deededc4b4772b633036cb:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 600f81753592452be3deededc4b4772b633036cb
+  relative_starting_point: 0.0034
+  relative_completeness: 0.007
+  real_estimate: 2.0
+  real_effort: 3.41
+  for_experiment: false
+  description: |-
+    Manter Notificação
+    ------------------------
+    O sistema deverá permitir que o usuário cadastre notificações para os relatos:
+
+    * MEIO ( - Email; - Correio;  - Presencial;)
+    * SITUACAO (Enviado, Recebido, Lido, Voltou)
+    * COD_RELATO
+    * COD_MODELO_NOTIFICACAO
+
+    Regras de Negócio:
+
+    * Todos os campos são de preenchimento obrigatório;
+    * Caso o relato seja aprovado e exista uma Notificação que o meio é EMAIL, o sistema deverá mandar um e-mail para a empresa cadastrada no relato com a notificação e marcar o registro de notificação como 'Enviado'.
+requirement_9a9baafac81a521a430b0551e115bb2db18cac37:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 9a9baafac81a521a430b0551e115bb2db18cac37
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 3.0
+  real_effort: 6.41
+  for_experiment: false
+  description: |
+    Manter Perfis
+    ------------------------
+    * NOME;
+    * PERMISSÕES;
+    * STATUS
+
+    Regras de Negócio
+
+    * O atributo status terá como finalidade controlar se o registro está ativo ou inativo, pois não existirá exclusão física do banco de dados.
+    * O atributo nome deverá ser único.
+    * O atributo nome deverá ser preenchido.
+    * O registro deve ser criado com a situação inicial ativo
+    * O atributo permissões deverá trabalhar com uma string em formato JSON. O modelo de controle de permissões deverá ser igual ao que temos implementado em rails. Devemos criar um arquivo JSON com a definição padrão das ações e na interface o usuário dizer o que pode ver e o que não pode ver;
+requirement_bd72a52f6f3e5aab241ebf37a537287389297ae5:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: bd72a52f6f3e5aab241ebf37a537287389297ae5
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 10.0
+  real_effort: 10.26
+  for_experiment: false
+  description: |-
+    Manter Relato
+    ------------------------
+    O sistema deverá permitir que os usuários que tenham permissão de acesso cadastrem os relatos reportados pelas pessoas. Os dados deste módulo devem ser os seguintes:
+
+    * COD_SEGMENTO
+    * COD_CLASSIFICACAO_RELATO
+    * COD_TIPO_RELATO
+    * COD_AREA
+    * CODIGO_RELATO
+    * SOLICITANTE_NOME
+    * SOLICITANTE_LOGRADOURO
+    * SOLICITANTE_CEP
+    * SOLICITANTE_BAIRRO
+    * SOLICITANTE_NUMERO
+    * SOLICITANTE_COMPLEMENTO
+    * SOLICITANTE_CIDADE
+    * SOLICITANTE_CPF
+    * SOLICITANTE_RG
+    * SOLICITANTE_PROFISSAO
+    * COD_EMPRESA
+    * COD_UNIDADE
+    * PEDIDO
+    * SITUACAO
+    * OBSERVAÇÃO
+
+    Regras de Negócio
+
+    * Os seguintes campos são de preenchimento obrigatório: * COD_SEGMENTO, * COD_CLASSIFICACAO_RELATO, * COD_TIPO_RELATO, * COD_AREA, * COD_RELATO, * SOLICITANTE_NOME, * SOLICITANTE_LOGRADOURO, * SOLICITANTE_CEP, * SOLICITANTE_BAIRRO, * SOLICITANTE_NUMERO, * SOLICITANTE_COMPLEMENTO, * SOLICITANTE_CIDADE, * SOLICITANTE_CPF, * SOLICITANTE_RG, * SOLICITANTE_PROFISSAO,
+    * COD_EMPRESA, * COD_UNIDADE, SITUACAO
+    * O campo COD_UNIDADE deve ter o mesmo valor que o usuário está autenticado. Este processo deverá ser transparente para o usuário
+    * Ao criar um relato o sistema deverá possuir situação 'Rascunho'
+    * O campo cep deve trabalhar com a API do Busca CEP. Ao digitar um CEP o endereço deve ser autocompletado.
+    * Para os combos externos (Chaves estrangeiras) só poderão ser listados os dados com situação ATIVO.
+    * O campo CODIGO_RELATO deverá ser gerado pelo sistema. Este número deverá ser único por tipo de relato e unidade. Exemplo: (TP_RELATO_1_UNIDADE)
+requirement_ca82ac39df23ba57980685603f5f4582b366e7bc:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: ca82ac39df23ba57980685603f5f4582b366e7bc
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 3.0
+  real_effort: 2.08
+  for_experiment: false
+  description: |-
+    Manter Segmentos
+    ------------------------
+    O sistema deverá permitir que o usuário cadastre segmentos. A entidade deverá possuir os seguintes atributos:
+
+    * NOME;
+    * DESCRICAO;
+    * STATUS
+
+    Regras de Negócio
+
+    * O atributo status terá como finalidade controlar se o registro está ativo ou inativo, pois não existirá exclusão física do banco de dados.
+    * O atributo nome deverá ser único;
+    * O atributo nome deverá ser preenchido.
+    * O campo nome é de preenchimento obrigatório
+    * O registro deve ser criado com a situação inicial ativo
+requirement_34217bb7f61426fa10b5ec86de44f6ad1f704a92:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 34217bb7f61426fa10b5ec86de44f6ad1f704a92
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 4.0
+  real_effort: 1.02
+  for_experiment: false
+  description: |-
+    Manter Unidades
+    ------------------------
+    * NOME;
+    * DADOS ENDEREÇO (LOGRADOURO, CIDADE, BAIRRO, CEP, NÚMERO E COMPLEMENTO) (Toda a parte de endereço iremos trabalhar integrado com a API do BuscaCEP);
+requirement_c71c8587314a3dbec3bfdc894a22e23f019d7885:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: c71c8587314a3dbec3bfdc894a22e23f019d7885
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 3.0
+  real_effort: 2.98
+  for_experiment: false
+  description: "Manter Usuários\n------------------------\n* TIPO_USUARIO\n* NOME;\n*
+    EMAIL;\n* LOGIN;\n* SENHA;\n* COD_PERFIL; \n* STATUS;\n\nRegras de Negócio\n\n*
+    O campo tipo de usuário deverá permitir a escolha de dois tipos: Administrador
+    e Usuário Unidade. O preenchimento deste campo é obrigatório.\n* O campo nome
+    é de preenchimento obrigatório\n* O campo login é de preenchimento obrigatório\n*
+    O campo login deve ser único\n* O campo email é de preenchimento obrigatório\n*
+    O campo email deve set único\n* O campo senha é de preenchimento obrigatório\n*
+    O campo senha deve ser maior ou igual a 6 digítios\n* O registro deve ser criado
+    com a situação inicial ativo\n* O campo cod_perfil é obrigatório para os usuários
+    do tipo Usuário Unidade. Deverão ser listados apenas os perfis com situação ativo.
+    Usuários administradores não deverão possuir perfil de acesso.\n* Caso o tipo
+    de usuário escolhido seja Usuário Unidade o sistema deverá permitir que o usuário
+    selecione uma ou mais unidades no qual ele estará vinculado. O usuário deste tipo
+    deverá estar vinculado ao menos a uma unidade. \n"
+requirement_aa6ac22a898a9d592d6f0e66b0c14ad0799f9444:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: aa6ac22a898a9d592d6f0e66b0c14ad0799f9444
+  relative_starting_point: 0.0033
+  relative_completeness: 0.007
+  real_estimate: 2.0
+  real_effort: 1.54
+  for_experiment: false
+  description: |-
+    Modelo Notificação
+    ------------------------
+    * NOME;
+    * DESCRICAO
+    * STATUS
+
+    Regras de Negócio
+
+    * O campo nome é de preenchimento obrigatório
+    * O atributo status terá como finalidade controlar se o registro está ativo ou inativo, pois não existirá exclusão física do banco de dados.
+    * O registro deve ser criado com a situação inicial ativo
+    * O campo descrição devemos trabalhar com alguma ferramenta de edição de texto
+requirement_8bbe1135c7fab8dff949c57aa763ece3a13bac40:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 8bbe1135c7fab8dff949c57aa763ece3a13bac40
+  relative_starting_point: 0.1964
+  relative_completeness: 0.5395
+  real_estimate: 2.0
+  real_effort: 2.6
+  for_experiment: false
+  description: "Relatório de acompanhamento de relatos\n------------------------\nEste
+    relatório deverá possuir os seguintes filtros:\n\n* Data de Registro do Relato
+    (Intervalo);\n* Número do Relato;\n* Unidade;  \n\nEsse relatório deverá buscar
+    todos os relatos que estão com sua situação Rascunho, Em Análise ou Reprovado
+    no intervalo de datas informados.\n\nDeverá ser listado as seguintes informações:\n\n*
+    Código do Relato;\n* Unidade;\n* Solicitante;\n* Empresa;\n* Situação\n\n\n"
+requirement_210178510ff3c0026f3bcc36f8885b694c8951a8:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 210178510ff3c0026f3bcc36f8885b694c8951a8
+  relative_starting_point: 0.1969
+  relative_completeness: 0.5395
+  real_estimate: 2.0
+  real_effort: 1.3
+  for_experiment: false
+  description: |-
+    Relatório de Relatos
+    ------------------------
+    O relatório deverá possuir os seguintes filtros:
+
+    * Número do Relato;
+    * Data do Registro;
+    * Município;
+    * Tipo de Relato;
+    * Situação;
+    * Unidade.
+
+    O relato deverá exibir as seguintes informações:
+
+    * Código do Relato;
+    * Unidade;
+    * Solicitante;
+    * Empresa;
+    * Tipo do Relato;
+    * Segmento;
+    * Classificação Relato;
+    * Link para download do pdf do relato.
+requirement_7a74d5b6ae66288ab7f1c81b73e3a73edee1df38:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 7a74d5b6ae66288ab7f1c81b73e3a73edee1df38
+  relative_starting_point: 0.191
+  relative_completeness: 0.4891
+  real_estimate: 1.0
+  real_effort: 0.84
+  for_experiment: false
+  description: |-
+    Situação Aprovado
+    ------------------------
+    Quando o Relato for aprovado o sistema não pode permitir que o Relato e seus módulos aninhados sejam alterados.
+
+    Deverão sumir todos os links de Edição, Exclusão e Criação. Ficando apenas os de detalhes.
+requirement_ff98d654c3a194a8f507ed6c4da2560a32bb277e:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: ff98d654c3a194a8f507ed6c4da2560a32bb277e
+  relative_starting_point: 0.3246
+  relative_completeness: 0.8168
+  real_estimate: 1.0
+  real_effort: 0.5
+  for_experiment: false
+  description: "Solicitação Cliente - Alteração Cabeçalho e Rodapé \n------------------------\nDeverá
+    ser alterado o cabeçalho e rodapé do documento de impressão do relato para exatamente
+    dos modelos que encontram-se em anexo nessa carta."
+requirement_7fcbaebf3b2e2a5d23d8c1c1d7916cb21a0de32b:
+  project: project_0ee8ac3a47b67ac33ca845f5f7e9c880f4c5707d
+  hashkey: 7fcbaebf3b2e2a5d23d8c1c1d7916cb21a0de32b
+  relative_starting_point: 0.3245
+  relative_completeness: 0.8168
+  real_estimate: 1.0
+  real_effort: 0.45
+  for_experiment: false
+  description: |-
+    Solicitação Cliente - Alterar Campos Obrigatórios Relato
+    ------------------------
+    Deverá ser retirado a obrigatoriedade dos campos:
+
+    * Todos referente a endereço;
+    * Profissão
+requirement_4818bbf2e6173db795a73d457f649701b93d7190:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: 4818bbf2e6173db795a73d457f649701b93d7190
+  relative_starting_point: 0.9716
+  relative_completeness: 0.7786
+  real_estimate: 1.0
+  real_effort: 0.85
+  for_experiment: false
+  description: |-
+    Ativar auditoria automática
+    ------------------------
+    Criar tabela de auditoria e alterar o framework para gravar log de alteração de registros.
+requirement_43e46ce1441f048324dbae8e1c2dd2b2f06245b9:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: 43e46ce1441f048324dbae8e1c2dd2b2f06245b9
+  relative_starting_point: 0.9716
+  relative_completeness: 0.7786
+  real_estimate: 1.0
+  real_effort: 0.98
+  for_experiment: false
+  description: |+
+    Criar namespace de Administração
+    ------------------------
+    As páginas dentro de da área administrativa deverão respeitar a namespace /admin.
+
+
+requirement_563fbb154462e8630fdbd1e6441d14eb671b5f01:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: 563fbb154462e8630fdbd1e6441d14eb671b5f01
+  relative_starting_point: 0.989
+  relative_completeness: 0.7847
+  real_estimate: 4.0
+  real_effort: 1.61
+  for_experiment: false
+  description: |-
+    Manter Atas
+    ------------------------
+    Esta carta compreende:
+    * Criação da tabela de publications se não já não estiver;
+    * Criação das telas de CRUD para atas.
+
+    Uma ata possui os seguintes atributos:
+    * page_id (int): Rerencia a página em que será exibido [Apenas as páginas do colegiado atual devem ser exibidas];
+    * title (string);
+    * type (int): deve ser Record;
+    * event_date (date): deve ser exibido como \"Data da Reunião\";
+    * publication_official_date (date);
+    * publication_initial_date (date);
+    * publication_final_date (date);
+    * download_link (string);
+    * description (string);
+    * attached_files_dir_path (string);
+    * idiom (string);
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+requirement_a7b40269ae829c378387ebaae0aafa5f7e3557f4:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: a7b40269ae829c378387ebaae0aafa5f7e3557f4
+  relative_starting_point: 0.9893
+  relative_completeness: 0.7847
+  real_estimate: 4.0
+  real_effort: 1.52
+  for_experiment: false
+  description: |-
+    Manter Banners
+    ------------------------
+    Esta carta compreende:
+    * Criação da tabela de banners se não já não estiver;
+    * Criação das telas de CRUD para banners.
+
+    Um banner possui os seguintes atributos:
+    * file_path (string): para upload de arquivo;
+    * link (string): para funcionar como link ao ser clicado;
+    * status (int): checkbox de ativo;
+    * idiom (string);
+
+    Os campos file_path, status e idiom são obrigatórios;
+    O campo idiom apenas aceitará 'pt' ou 'en';
+    Os arquivos de imagem aceitos serão no formato formato PNG ou JPEG;
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+requirement_17da61a1d81251c6e46bab80b6b8b9749319574a:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: 17da61a1d81251c6e46bab80b6b8b9749319574a
+  relative_starting_point: 0.9718
+  relative_completeness: 0.7786
+  real_estimate: 4.0
+  real_effort: 3.22
+  for_experiment: false
+  description: |-
+    Manter Colegiados
+    ------------------------
+    Esta carta compreende:
+    * Criação da tabela de colegiados com os campos:
+    * Criação das telas de CRUD para colegiados.
+
+    Os colegiados compreendem os seguintes atributos:
+    * Sigla;
+    * Name;
+    * Type: identificar possíveis tipos;
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+requirement_61fa884e36848b87bd9060003a57c54600b12f5c:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: 61fa884e36848b87bd9060003a57c54600b12f5c
+  relative_starting_point: 0.9892
+  relative_completeness: 0.7847
+  real_estimate: 2.0
+  real_effort: 0.8
+  for_experiment: false
+  description: |-
+    Manter Copyright
+    ------------------------
+    Esta carta compreende:
+    * Criação da tabela de copyrights se não já não estiver;
+    * Criação das telas de alteração de copyrights.
+
+    Um copyright possui os seguintes atributos:
+    * full_text (text);
+    * idiom (string);
+
+    Nunca poderá haver mais de um registro de copyright para o mesmo idioma!
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+requirement_47b032829314ee61b219412c31608fe450e5d354:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: 47b032829314ee61b219412c31608fe450e5d354
+  relative_starting_point: 0.989
+  relative_completeness: 0.7847
+  real_estimate: 3.0
+  real_effort: 1.15
+  for_experiment: false
+  description: |-
+    Manter Grupos de Documentos
+    ------------------------
+    Esta carta compreende:
+    * Criação da tabela de document_groups se não já não estiver;
+    * Criação das telas de CRUD para grupos de documentos.
+
+    Um grupo de documento possui os seguintes atributos:
+    * name (string);
+    * idiom (string);
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+requirement_db5c3b96fc6f3a393cf5d40e09e9a3cd8637e8d1:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: db5c3b96fc6f3a393cf5d40e09e9a3cd8637e8d1
+  relative_starting_point: 0.9894
+  relative_completeness: 0.7847
+  real_estimate: 4.0
+  real_effort: 0.81
+  for_experiment: false
+  description: |-
+    Manter Links Sociais
+    ------------------------
+    Esta carta compreende:
+    * Criação da tabela de social_links se não já não estiver;
+    * Configuração dos tipos no arquivo \"config/social_link_types.yml\";
+    * Criação das telas de CRUD para Links Sociais.
+
+    Um link social possui os seguintes atributos:
+    * type (int): Os tipos disponíveis deverão ser definidos no arquivo \"config/social_link_types.yml\";
+    * order (int): utilizado para ordenação da lista de itens;
+    * link (string): link para uma página social externa;
+
+    Cada registro deve ser escrito como exemplo:
+    gplus:
+      title: \"Google Plus\"
+      normal_image: \"gplus_normal.png\"
+      hover_image: \"gplus_hover.png\"
+
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+requirement_bd3242ca008cd4ce542099093ae7ff0c2643d8ef:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: bd3242ca008cd4ce542099093ae7ff0c2643d8ef
+  relative_starting_point: 0.9716
+  relative_completeness: 0.7786
+  real_estimate: 6.0
+  real_effort: 1.74
+  for_experiment: false
+  description: |-
+    Manter Perfis de Acesso
+    ------------------------
+    Esta carta compreende:
+    -Criação da tabela de perfil;
+    -Criação das telas de CRUD para perfis de Acesso.
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+
+    Campos:
+    * Name
+    * Status
+    * Permissions
+requirement_e677b6710211a744726d67b84e754fcbac924512:
+  project: project_5915c237fbf4c9e56b918f783427de50b01f416d
+  hashkey: e677b6710211a744726d67b84e754fcbac924512
+  relative_starting_point: 0.9716
+  relative_completeness: 0.7786
+  real_estimate: 4.0
+  real_effort: 6.14
+  for_experiment: false
+  description: |-
+    Manter Usuários
+    ------------------------
+    Esta carta compreende:
+    -A criação da tabela de usuários;
+    -A criação das telas CRUD de usuários;
+    -Os usuários poderão ser vinculados a um colegiados;
+    -O uso de SHA1 para criptografia de senhas.
+
+    Estas atividades devem ser realizadas dentro da área de administração.
+
+    Campos:
+    * Name;
+    * Username;
+    * Password;
+    * Password confirmation;
+    * Type: ADMINISTRATOR ou NORMAL;
+    * Status: ACTIVE ou INACTIVE;
+    * Collegiate: referencia ao Colegiado
+
+    Usuários do tipo NORMAL devem estar obrigatoriamente associados a um colegiado.
+
+    Usuários ADMINISTRATOR não podem estar associados a colegiados.
+requirement_c593c0248f5f881b5c8c659ddb0943a8e3f058ad:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: c593c0248f5f881b5c8c659ddb0943a8e3f058ad
+  relative_starting_point: 0.0984
+  relative_completeness: 0.2182
+  real_estimate: 1.0
+  real_effort: 0.22
+  for_experiment: false
+  description: |-
+    Add Coluna Data demissão
+    ------------------------
+    Add Coluna Data demissão na view de HR
+requirement_564ebecc6f370224fdea199ec9d8fc1314b0c2c5:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: 564ebecc6f370224fdea199ec9d8fc1314b0c2c5
+  relative_starting_point: 0.0001
+  relative_completeness: 0.0
+  real_estimate: 4.0
+  real_effort: 9.28
+  for_experiment: false
+  description: "Despesas - Contratos\n------------------------\nGerar a tabela empenhos
+    com os seguintes campos: \n\nID \nNOME_FORNECEDOR, \nCNPJ, \nANO_VIGENTE, \nOBJETO,
+    \nVALOR_CONTRATO, \nNRO_PROCESSO, \nDESCRICAO_CONTRATO, \nDATA_CONTRATO \n\n\nCONSULTA
+    NO SISTEMA EXTERNO \n\n\nselect F.NME_FORNECEDOR AS NOME_FORNECEDOR,F.CGC AS CNPJ,C.ANO_VIGENTE
+    AS ANO,C.OBJETO AS OBJETO,C.VLR_CONTRATO AS VALOR_CONTRATO, C.NRO_PROCESSO AS
+    NUMERO_PROCESSO, C.DES_CONTRATO AS DESCRICAO, C.DAT_CONTRATO AS DATA_CONTRATO
+    \nfrom C_CONTRATO C \nLEFT JOIN C_FORNECEDOR F ON F.COD_FORNECEDOR = C.COD_FORNECEDOR
+    \nWHERE ANO_VIGENTE = 2012(lEMBRANDO QUE O ANO SERÁ SEMPRE O CORRENTE)"
+requirement_2594a59b84adcff19397d98628abddf5fc7f8bc4:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: 2594a59b84adcff19397d98628abddf5fc7f8bc4
+  relative_starting_point: 0.0001
+  relative_completeness: 0.0
+  real_estimate: 4.0
+  real_effort: 0.12
+  for_experiment: false
+  description: "Despesas - Liquidacões\n------------------------\nGerar a tabela empenhos
+    com os seguintes campos: \n\nID \nNOME_FORNECEDOR, \nCNPJ, \nANO \nNUMEROLIQUIDACAO,
+    \nDATA_LIQUIDACAO, \nDATA_VENCIMENTO, \nESTORNO, \nVALOR_LIQUIDACAO, \nTIPO_DOCUMENTO
+    \nNUMERO_DOCUMENTO \n\n\nCONSULTA NO SISTEMA EXTERNO \n\n\nSELECT F.NME_FORNECEDOR
+    AS NOME_FORNECEDOR,F.CGC AS CNPJ,LIQ.ANO_VIGENTE AS ANO_VIGENTE, LIQ.NRO_NL AS
+    NUMERO_LIQUIDACAO, \nLIQ.DAT_NL AS DATA_LIQUIDACAO, LIQ.DAT_VENCTO AS DATA_VENCIMENTO,
+    LIQ.ESTORNO AS ESTORNO,LIQ.VLR_NL AS VALOR_LIQUIDACAO, I.TIP_DOCUMENTO AS TIPO_DOCUMENTO,I.NRO_DOCUMENTO
+    AS NUMERO_DOCUMENTO \nFROM M_NL LIQ \nLEFT JOIN C_FORNECEDOR F ON F.COD_FORNECEDOR
+    = LIQ.COD_FORNECEDOR \nLEFT JOIN M_NLITEM I ON I.NRO_NL = LIQ.NRO_NL \nWHERE LIQ.ANO_VIGENTE
+    = 2012(lEMBRANDO QUE O ANO SERÁ SEMPRE O CORRENTE"
+requirement_193411b6dfe2a7e0effa714a8b95cfbdf7bdb87a:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: 193411b6dfe2a7e0effa714a8b95cfbdf7bdb87a
+  relative_starting_point: 0.1053
+  relative_completeness: 0.2325
+  real_estimate: 2.0
+  real_effort: 2.0
+  for_experiment: false
+  description: |-
+    Exportar Receitas
+    ------------------------
+    Exportar Receitas em Excel
+requirement_4c368029c0bd69a8f3b3081e5b166c16a5e2573c:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: 4c368029c0bd69a8f3b3081e5b166c16a5e2573c
+  relative_starting_point: 0.0435
+  relative_completeness: 0.0218
+  real_estimate: 1.0
+  real_effort: 1.08
+  for_experiment: false
+  description: |+
+    Inserção de Filtros em Licitação
+    ------------------------
+    Deverá ser adicionado na view de licitações o filtro \"Modalidade\". Deverá ser inserida as seguintes constantes no model:
+
+    1- Inexigibilidade;
+    2- Compra por Dispensa;
+    3- Convite;
+    4- Tomada de Preços;
+    5- Concorrência;
+    6- Pregão;
+    8- Shopping;
+    9- Leilão;
+    10- Concurso
+
+    O sistema deverá permitir pesquisar pelo filtro acima(Tipo de Modalidade).
+
+
+    O sistema deverá permitir pesquisar pelo número do edital, com isso deverá ser inserido o campo número na pesquisa.
+
+    Deverá ser inserido o campo finalidade na pesquisa que analisará o conteúdo do campo LIC_B_OBJ(OBJETO). Lembrar de usar o LIKE para fazer esta consulta.
+
+
+
+requirement_0fd9ae531a79670fc3f6d8479aa66a8c9b0782fa:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: 0fd9ae531a79670fc3f6d8479aa66a8c9b0782fa
+  relative_starting_point: 0.0434
+  relative_completeness: 0.0218
+  real_estimate: 1.0
+  real_effort: 1.96
+  for_experiment: false
+  description: |-
+    Inserir Campo Cargo na Pesquisa RH
+    ------------------------
+    Deverá ser inserido o campo cargo na pesquisa na área de recursos humanos.
+
+    A rotina de importação deverá também importar os cargos em uma tabela. Com isso, deverá ser criada a tabela de cargos com os seguintes campos:
+
+    ID;
+    COD_CARGO (CAR_S_COD);
+    DESCRICAO (CAR_A_DES);
+
+    O sistema deverá permitir que o usuário pesquisa tanto por nome quanto por cargo.
+requirement_6083b94060cb81611ef45a7d57af46811c69bfd4:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: 6083b94060cb81611ef45a7d57af46811c69bfd4
+  relative_starting_point: 0.0981
+  relative_completeness: 0.2112
+  real_estimate: 1.0
+  real_effort: 0.57
+  for_experiment: false
+  description: |-
+    Inserir campo RH
+    ------------------------
+    Add DATA_DEMISSÃO na tabela rh
+requirement_da90ae5c70e3f3cd22d62f6b4103e69ad39b61ec:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: da90ae5c70e3f3cd22d62f6b4103e69ad39b61ec
+  relative_starting_point: 0.0441
+  relative_completeness: 0.0218
+  real_estimate: 2.0
+  real_effort: 1.33
+  for_experiment: false
+  description: |
+    Manter Receita
+    ------------------------
+    Criar uma tabela de Receitas:
+    CODIGO_CONTA;
+    DESCRICAO_CONTA;
+    NUMERO_GUIA;
+    TIPO_HISTORICO;
+    HISTORICO_RECEITA;
+    FONTE;
+    VALOR;
+    RECEITA;
+    TIPO_RECEITA;
+    DATA_ARRECADACAO;
+
+    Popular ela com dados genericos direto em banco e montar os filtros seguindo  as telas enviadas.
+requirement_d51508bf5e59aea8214e2e60385c04d0d3739cd4:
+  project: project_670477bd532bd6f3d748d0ee14b4ebe8c1473fa4
+  hashkey: d51508bf5e59aea8214e2e60385c04d0d3739cd4
+  relative_starting_point: 0.098
+  relative_completeness: 0.2093
+  real_estimate: 1.0
+  real_effort: 0.56
+  for_experiment: false
+  description: "Novos Campos Receitas\n------------------------\nReceitas: \n-> COD_RECEITA:
+    string;\n-> DESCRICAO: string;\n-> NIVEL: integer;\n-> TIPO: string;\n-> ANO_VIGENTE:
+    integer;\n\nitens_receita:\n-> COD_RECEITA: string;\n-> ANO_VIGENCIA: integer;\n->
+    DATA: date;\n-> VALOR: float;\n"

@@ -1,0 +1,44 @@
+<fieldset>
+  <legend>Requisito <%= @requirements_to_estimate.index(@requirement) + 1 rescue 1 %>: Rodada <%= @estimate.rounds.size + 1 %></legend>
+  <%= form_for(@round) do |f| %>
+    <%= f.hidden_field :estimate_id %>
+    <%= hidden_field_tag :requirement_id, @round.estimate.requirement.id %>
+    <% if @round.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@team.errors.count, "erro") %> impede esta rodada de ser gravada:</h2>
+        <ul>
+        <% @round.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <table>
+      <thead>
+        <th>Nome</th>
+        <th>Valor Anterior</th>
+        <th>Valor Atual</th>
+        <th>Valor Justificativa</th>
+      </thead>
+      <tbody>
+        <% @round.round_participants.each_with_index do |round_participant, index| %>
+          <%= fields_for 'round_participants[]', round_participant do |rp| %>
+            <tr>
+              <td>
+                <%= rp.hidden_field :participant_id %>
+                <%= round_participant.participant.name %>
+              </td>
+              <td><%= @estimate.rounds.last.round_participants.where(participant: round_participant.participant).last.effort_estimate.to_i rescue '' %></td>
+              <td><%= rp.text_field :effort_estimate %></td>
+              <td><%= rp.text_area :justification %></td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+    <p class="actions">
+      <%= f.submit 'Terminar rodada' %> |
+      <%= link_to 'Cancelar', 'javascript:window.close()' %>
+    </p>
+  <% end %>
+</fieldset>

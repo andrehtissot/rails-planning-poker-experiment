@@ -1,0 +1,40 @@
+<fieldset>
+  <fieldset>
+    <legend>Dados do Projeto</legend>
+    <p>
+      <strong>Objetivos do projeto:</strong>
+      <%= @requirement.project.objective %>.
+    </p>
+    <p>
+      <strong>Tecnologias empregadas:</strong>
+      <%= @requirement.project.technologies %>.
+    </p>
+    <p>
+      <strong>Tamanho estimado do projeto:</strong>
+      <%= @requirement.project.size %> homens-hora.
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Dados do Requisito</legend>
+    <p>
+      <strong>
+        Quanto tempo do cronograma total do projeto foi gasto antes do início da execução desta atividade:
+      </strong>
+      <%= (@requirement.relative_starting_point * 100).round(2) %>%.
+    </p>
+    <p>
+      <strong>
+        Quanto do projeto já foi entregue antes do início da execução desta atividade:
+      </strong>
+      <%= (@requirement.relative_completeness * 100).round(2) %>%.
+    </p>
+    <p>
+      <strong>Esforço realizado:</strong>
+      <%= @requirement.real_effort.round(2).to_s %> homens-hora.
+    </p>
+    <p>
+      <strong>Descrição:</strong><br />
+      <%= @requirement.description.strip.gsub("\n",'<br />').html_safe %>
+    </p>
+  </fieldset>
+</fieldset>

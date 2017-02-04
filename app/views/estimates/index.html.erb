@@ -1,0 +1,12 @@
+<%= render 'header' %>
+<%= render 'project' %>
+<%= render 'list' %>
+<% unless(@requirement.nil?) %>
+<div style="float:left;position:absolute;margin-left:180px">
+  <fieldset>
+    <legend>Requisito <%= (@requirements_to_estimate.index(@requirement)+1) %></legend>
+    <p id="notice"><%= notice %></p>
+    <%= render 'form' %>
+  </fieldset>
+</div>
+<% end %>

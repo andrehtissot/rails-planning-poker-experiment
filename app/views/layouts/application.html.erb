@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlanningpokerExperiment</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<script>
+var last_event_captured_timestamp = null,
+  last_event_captured_type = null,
+  events_pool = [],
+  get_attributes = function(obj, level){
+    var values = new Object();
+    for (key in obj) {
+      try {
+        if (key != 'delegateTarget' && obj.hasOwnProperty(key) && (typeof obj[key] !== 'undefined') && (typeof obj[key] !== 'function')){
+          if(typeof obj[key] === 'object'){
+            if(level < 1)
+              values[key] = get_attributes(obj[key], level+1);
+          } else {
+            values[key] = obj[key];
+          }
+        }
+      } catch(e) {}
+    }
+    return values;
+  };
+
+jQuery('body').on('click focus hover input paste keypress submit', '*', function(e){
+  if(last_event_captured_timestamp != e.timeStamp || last_event_captured_type != e.type) {
+    last_event_captured_timestamp = e.timeStamp;
+    last_event_captured_type = e.type;
+    events_pool.push(JSON.stringify(new get_attributes(e, 0)));
+    if(events_pool.length >= 20 || e.type == 'submit' || e.type == 'click') {
+      $.post('<%= browser_logs_create_path %>', {events_jsons: events_pool});
+      delete(events_pool);
+      events_pool = [];
+    }
+  }
+});
+</script>
+</body>
+</html>

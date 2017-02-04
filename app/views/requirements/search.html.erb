@@ -1,0 +1,35 @@
+<%= render 'search_fields' %>
+<fieldset>
+  <legend>Resultados da Busca (<%= @requirements.size %> resultados)</legend>
+  <table class="projects-table">
+    <tr>
+      <th>Projeto (homens-hora)</th>
+      <th>Momento de Estimativa</th>
+      <th>Esforço Realizado</th>
+      <th>Descrição</th>
+      <th></th>
+    </tr>
+    <% @requirements.each do |requirement| %>
+      <% project = requirement.project %>
+      <%= requirement.hashkey if project.nil? %>
+      <% next if project.nil? %>
+      <tr>
+        <td><%= project.title %> (<%= project.size %> homens-hora)</td>
+        <td><%= (requirement.relative_starting_point * 100).round(2) %>%</td>
+        <td><%= requirement.real_effort %> homens-hora</td>
+        <td><%= requirement.description[0,80]+'...' %></td>
+        <td><%= link_to 'Abrir', requirement_path(requirement), {target: '_blank'} %></td>
+      </tr>
+    <% end %>
+  </table>
+  <script>
+    $('.projects-table').on('click', 'a', function(e){
+      e.preventDefault();
+      $.get($(this).attr('href'), function(data){
+        $('.project-show-content').html(data);
+        $(document.body).scrollTo('.project-show-content', 0);
+      });
+    })
+  </script>
+</fieldset>
+<div class="project-show-content"></div>

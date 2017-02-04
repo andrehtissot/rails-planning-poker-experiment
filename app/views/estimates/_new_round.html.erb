@@ -1,0 +1,69 @@
+<fieldset <%= @estimate_errors ? 'style="display:none"'.html_safe : '' %>>
+  <legend>Rodada <%= @estimate.rounds.size + 1 %></legend>
+  <%= form_for(@round, url:{action: :create_round}) do |f| %>
+    <%= f.hidden_field :estimate_id %>
+    <%= hidden_field_tag :requirement_id, @round.estimate.requirement.id %>
+    <div id="error_explanation">
+      <h2>Os erros abaixo impedem esta estimativa de ser gravada:</h2>
+      <ul>
+        <% if @round.errors.any? %>
+          <% @round.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+    <table>
+      <thead>
+        <th>Nome</th>
+        <th>Valor Anterior</th>
+        <th>Valor Atual</th>
+        <th>Valor Justificativa</th>
+      </thead>
+      <tbody>
+        <% @round.round_participants.each_with_index do |round_participant, index| %>
+          <%= fields_for 'round_participants[]', round_participant do |rp| %>
+            <tr>
+              <td>
+                <%= rp.hidden_field :participant_id %>
+                <%= round_participant.participant.name %>
+              </td>
+              <td><%= @estimate.rounds.last.round_participants.where(participant: round_participant.participant).last.effort_estimate rescue '' %></td>
+              <td><%= rp.text_field :effort_estimate %></td>
+              <td><%= rp.text_area :justification %></td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+    <p class="actions">
+      <%= f.submit 'Terminar rodada' %>
+      <% unless @estimate.rounds.empty? %>
+        | <%= link_to 'Definir estimativa final', '#', {class: 'close-rounds'} %>
+      <% end %>
+    </p>
+  <% end %>
+</fieldset>
+<script>
+if(jQuery('#error_explanation li').length == 0)
+  jQuery('#error_explanation').hide();
+
+var has_shown_error = false;
+jQuery('a.close-rounds').click(function(e){
+  e.preventDefault();
+  var fields = jQuery('#new_round :text:visible,textarea:visible')
+  for(var i = 0; i < fields.length; i++){
+    if(jQuery(fields[i]).val() != ''){
+      if(!has_shown_error) {
+        has_shown_error = true;
+        jQuery('#error_explanation').show();
+        jQuery('#error_explanation ul').append('<li>Termine a rodada antes de definir a estimativa final</li>');
+      }
+      return;
+    }
+  }
+  jQuery(this).closest('fieldset').hide();
+  jQuery('div.final-estimate').show();
+});
+
+</script>

@@ -1,0 +1,6 @@
+<span><%= link_to 'Sair do experimento', teams_path %></span>
+<% if(@selected_participants.size > 0) %>
+	<span><%= link_to 'Concluir seleção de participantes', estimates_path %></span>
+<% end %>
+<br clear="both"/>
+<br clear="both"/>

@@ -1,0 +1,7 @@
+<span>Time: "<%= @team.name %>"</span>
+<% unless(BLOCK_REQUIREMENTS_INDEX) %>
+	<span><%= link_to 'Banco de dados histórico', requirements_path, {target: '_blank'} %></span>
+<% end %>
+<span><%= link_to 'Sair do experimento', teams_path %></span>
+<br clear="both"/>
+<br clear="both"/>
